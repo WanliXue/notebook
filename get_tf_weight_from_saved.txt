@@ -1,0 +1,25 @@
+在任何地方save的ckpt到最后的值都一样，已验证。
+
+验证不同eps delta的精确度，基本和paper一致。 需要pca层
+
+提取weight
+
+/Users/wanli/Dropbox/Deep learning/tmp_server_check/load_tf.py
+
+$ python ~/Documents/github_code/tensorflow/tensorflow/python/tools/inspect_checkpoint.py --file_name=/Users/wanli/Dropbox/Deep\ learning/tmp_server_check/Evaluation/pca/server2/ckpt
+
+python ~/Documents/github_code/tensorflow/tensorflow/python/tools/inspect_checkpoint.py --
+file_name=/Users/wanli/PycharmProjects/test_tensorflow/tf_save/privateSGD_eps20/bkup2/ckpt-5000
+
+$ python ~/Documents/github_code/tensorflow/tensorflow/python/tools/inspect_checkpoint.py --file_name=/Users/wanli/Dropbox/Deep\ learning/tmp_server_check/saved_file/ckpt
+
+global_step (DT_INT32) []
+hidden0_weight (DT_FLOAT) [60,1000]
+...
+logits_weight (DT_FLOAT) [1000,10]
+projection (DT_FLOAT) [784,60]
+
+发现projection不能print，估计是固定的值， 用 W3.eval() 获得值并且储存.
+
+
+http://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/

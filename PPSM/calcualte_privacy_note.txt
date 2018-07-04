@@ -1,0 +1,68 @@
+0.9   cosine distnace
+(77405, 2)  left pairs
+
+
+r1=( dists >= 0.95 )
+r2= (dists <= 1)
+14565
+
+
+upper_tria = np.triu_indices(7352)
+pairs:27022276
+
+r1=( dists >= 0.85 )
+r2= (dists <= 1)
+50841
+
+
+
+------------- HAR----- bf repeatness------
+
+lenth: 10000 b: 10 num_hash: 5 dis: 20.0 false_positive:  0.100925190275
+7352
+0.0056
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+7352
+0.0056
+
+
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+7352
+0.0048
+
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.57
+7352
+0.0033
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+7352
+0.0028
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.88
+7352
+0.0032
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.94
+3264
+7345
+0.0028
+
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.97
+3054
+0.0009
+
+
+
+---------CSI----
+fp      mi
+0.01	1.3599e-04
+0.1     1.3022e-04
+0.23    2.5293e-04
+0.46	9.1177e-05
+0.69    1.3437e-04
+0.82    8.4940e-05
+0.92	8.2688e-05
+0.99	6.2760e-05 

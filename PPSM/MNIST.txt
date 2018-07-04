@@ -1,0 +1,401 @@
+MNIST
+
+-------------------
+fp =0.001
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.0010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.911
+Jaccard accuracy= 0.913
+dice accuracy= 0.913
+hamming accuracy= 0.911
+Accuracy = 89.4% (894/1000) (classification)
+Mnist SVM accuracy is  (89.4, 1.639, 0.8153462101705476)
+
+lenth: 10000 b: 5 num_hash: 10 dis: 10.0 false_positive:  0.0010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.854
+Jaccard accuracy= 0.852
+dice accuracy= 0.852
+hamming accuracy= 0.854
+Accuracy = 87.4% (874/1000) (classification)
+Mnist SVM accuracy is  (87.4, 2.0550000000000002, 0.77014949133104038)
+
+lenth: 10000 b: 5 num_hash: 10 dis: 15.0 false_positive:  0.0010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.727
+Jaccard accuracy= 0.725
+dice accuracy= 0.725
+hamming accuracy= 0.727
+Accuracy = 84% (840/1000) (classification)
+Mnist SVM accuracy is  (84.0, 2.786, 0.6944722206793511)
+
+lenth: 10000 b: 5 num_hash: 10 dis: 20.0 false_positive:  0.0010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.606
+Jaccard accuracy= 0.607
+dice accuracy= 0.607
+hamming accuracy= 0.606
+Accuracy = 79.3% (793/1000) (classification)
+Mnist SVM accuracy is  (79.3, 2.962, 0.6756215025744654)
+
+lenth: 10000 b: 5 num_hash: 10 dis: 25.0 false_positive:  0.010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.432
+Jaccard accuracy= 0.433
+dice accuracy= 0.433
+hamming accuracy= 0.432
+Accuracy = 75% (750/1000) (classification)
+Mnist SVM accuracy is  (75.0, 3.847, 0.5888475738499879)
+
+lenth: 10000 b: 5 num_hash: 10 dis: 30.0 false_positive:  0.010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.355
+Jaccard accuracy= 0.358
+dice accuracy= 0.358
+hamming accuracy= 0.355
+Accuracy = 71% (710/1000) (classification)
+Mnist SVM accuracy is  (71.0, 4.7119999999999997, 0.51471172788469344)
+
+lenth: 10000 b: 5 num_hash: 10 dis: 35.0 false_positive:  0.010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.283
+Jaccard accuracy= 0.281
+dice accuracy= 0.281
+hamming accuracy= 0.283
+Accuracy = 65.2% (652/1000) (classification)
+Mnist SVM accuracy is  (65.2, 6.325, 0.3813763052766235)
+
+lenth: 10000 b: 5 num_hash: 10 dis: 40.0 false_positive:  0.010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.234
+Jaccard accuracy= 0.231
+dice accuracy= 0.231
+hamming accuracy= 0.234
+Accuracy = 60.1% (601/1000) (classification)
+Mnist SVM accuracy is  (60.1, 6.85, 0.3456726322125382)
+
+
+----------------
+fp=0.02
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.93
+Jaccard accuracy= 0.93
+dice accuracy= 0.93
+hamming accuracy= 0.93
+Accuracy = 91.3% (913/1000) (classification)
+Mnist SVM accuracy is  (91.3, 1.385, 0.8435911295848084)
+
+lenth: 10000 b: 10 num_hash: 5 dis: 10.0 false_positive:  0.100925190275
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.925
+Jaccard accuracy= 0.925
+dice accuracy= 0.925
+hamming accuracy= 0.925
+Accuracy = 88.7% (887/1000) (classification)
+Mnist SVM accuracy is  (88.7, 1.768, 0.80118969765527692)
+
+lenth: 10000 b: 10 num_hash: 5 dis: 15.0 false_positive:  0.100925190275
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.891
+Jaccard accuracy= 0.891
+dice accuracy= 0.891
+hamming accuracy= 0.891
+Accuracy = 87.6% (876/1000) (classification)
+Mnist SVM accuracy is  (87.6, 2.117, 0.765320331311305)
+
+lenth: 10000 b: 10 num_hash: 5 dis: 20.0 false_positive:  0.100925190275
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.85
+Jaccard accuracy= 0.85
+dice accuracy= 0.85
+hamming accuracy= 0.85
+Accuracy = 87% (870/1000) (classification)
+Mnist SVM accuracy is  (87.0, 2.068, 0.7690590012860873)
+
+
+----------------
+fp=0.04
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.93
+Jaccard accuracy= 0.929
+dice accuracy= 0.929
+hamming accuracy= 0.93
+Accuracy = 92% (920/1000) (classification)
+Mnist SVM accuracy is  (92.0, 1.212, 0.8621926568825373)
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 10 dis: 10.0 false_positive:  0.233602440978
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.914
+Jaccard accuracy= 0.914
+dice accuracy= 0.914
+hamming accuracy= 0.914
+Accuracy = 90.1% (901/1000) (classification)
+Mnist SVM accuracy is  (90.1, 1.6930000000000001, 0.80971232363153489)
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 10 dis: 15.0 false_positive:  0.233602440978
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.883
+Jaccard accuracy= 0.884
+dice accuracy= 0.884
+hamming accuracy= 0.883
+Accuracy = 87.6% (876/1000) (classification)
+Mnist SVM accuracy is  (87.6, 2.109, 0.7660859609062067)
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 10 dis: 20.0 false_positive:  0.233602440978
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.846
+Jaccard accuracy= 0.845
+dice accuracy= 0.845
+hamming accuracy= 0.846
+Accuracy = 88.1% (881/1000) (classification)
+Mnist SVM accuracy is  (88.1, 1.825, 0.7944416396070734)
+
+
+--------
+fp=0.22 (mnist)
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.931
+Jaccard accuracy= 0.929
+dice accuracy= 0.929
+hamming accuracy= 0.93
+Accuracy = 91.5% (915/1000) (classification)
+Mnist SVM accuracy is  (91.5, 1.387, 0.8434629140121146)
+
+lenth: 10000 b: 10 num_hash: 20 dis: 10.0 false_positive:  0.360096359218
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.901
+Jaccard accuracy= 0.896
+dice accuracy= 0.896
+hamming accuracy= 0.902
+Accuracy = 89.2% (892/1000) (classification)
+Mnist SVM accuracy is  (89.2, 1.48, 0.83138171755709012)
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 20 dis: 15.0 false_positive:  0.360096359218
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.879
+Jaccard accuracy= 0.875
+dice accuracy= 0.875
+hamming accuracy= 0.878
+Accuracy = 89.8% (898/1000) (classification)
+Mnist SVM accuracy is  (89.8, 1.789, 0.7999900830109334)
+
+lenth: 10000 b: 10 num_hash: 20 dis: 20.0 false_positive:  0.360096359218
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.842
+Jaccard accuracy= 0.841
+dice accuracy= 0.841
+hamming accuracy= 0.842
+Accuracy = 86.4% (864/1000) (classification)
+Mnist SVM accuracy is  (86.4, 2.056, 0.7697321214372391)
+
+---------
+fp=0.56 (m2)
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.91
+Jaccard accuracy= 0.909
+dice accuracy= 0.909
+hamming accuracy= 0.91
+Accuracy = 90.1% (901/1000) (classification)
+Mnist SVM accuracy is  (90.1, 1.627, 0.8169296361101133)
+
+
+lenth: 10000 b: 10 num_hash: 30 dis: 10.0 false_positive:  0.574322953125
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.843
+Jaccard accuracy= 0.846
+dice accuracy= 0.846
+hamming accuracy= 0.845
+Accuracy = 85.8% (858/1000) (classification)
+dMnist SVM accuracy is  (85.8, 2.153, 0.7609268745381399)
+
+lenth: 10000 b: 10 num_hash: 30 dis: 15.0 false_positive:  0.574322953125
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.834
+Jaccard accuracy= 0.832
+dice accuracy= 0.832
+hamming accuracy= 0.834
+Accuracy = 84.4% (844/1000) (classification)
+dMnist SVM accuracy is  (84.4, 2.607, 0.7130446970613354)
+
+lenth: 10000 b: 10 num_hash: 30 dis: 20.0 false_positive:  0.574322953125
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.723
+Jaccard accuracy= 0.718
+dice accuracy= 0.718
+hamming accuracy= 0.723
+Accuracy = 81.1% (811/1000) (classification)
+Mnist SVM accuracy is  (81.1, 3.031, 0.670714638283464)
+
+------------
+fp=  0.61549531577 (m3)
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.90549531577
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.817
+Jaccard accuracy= 0.816
+dice accuracy= 0.816
+hamming accuracy= 0.817
+Accuracy = 80.4% (804/1000) (classification)
+Mnist SVM accuracy is  (80.4, 3.235, 0.6481636404868939)
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 40 dis: 10.0 false_positive:  0.90549531577
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.67
+Jaccard accuracy= 0.644
+dice accuracy= 0.644
+hamming accuracy= 0.67
+Accuracy = 75% (750/1000) (classification)
+Mnist SVM accuracy is  (75.0, 4.0389999999999997, 0.57664657625571036)
+
+lenth: 10000 b: 10 num_hash: 40 dis: 15.0 false_positive:  0.90549531577
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.627
+Jaccard accuracy= 0.622
+dice accuracy= 0.622
+hamming accuracy= 0.627
+Accuracy = 72.2% (722/1000) (classification)
+Mnist SVM accuracy is  (72.2, 4.168, 0.5668533531743155)
+
+lenth: 10000 b: 10 num_hash: 40 dis: 20.0 false_positive:  0.90549531577
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.539
+Jaccard accuracy= 0.529
+dice accuracy= 0.529
+hamming accuracy= 0.54
+Accuracy = 66.3% (663/1000) (classification)
+Mnist SVM accuracy is  (66.3, 4.47, 0.5311078316840842)
+
+
+-----------
+fp:  0.81  (m3)
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.955409820497
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.483
+Jaccard accuracy= 0.449
+dice accuracy= 0.449
+hamming accuracy= 0.484
+Accuracy = 61.1% (611/1000) (classification)
+Mnist SVM accuracy is  (61.1, 5.926, 0.4050860182120943)
+
+lenth: 10000 b: 10 num_hash: 50 dis: 10.0 false_positive:  0.955409820497
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.437
+Jaccard accuracy= 0.427
+dice accuracy= 0.427
+hamming accuracy= 0.438
+Accuracy = 54.7% (547/1000) (classification)
+Mnist SVM accuracy is  (54.7, 8.4299999999999997, 0.24893945575526805)
+
+lenth: 10000 b: 10 num_hash: 50 dis: 15.0 false_positive:  0.955409820497
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.262
+Jaccard accuracy= 0.267
+dice accuracy= 0.267
+hamming accuracy= 0.262
+Accuracy = 40% (400/1000) (classification)
+Mnist SVM accuracy is  (40.0, 10.102, 0.14602140488704313)
+
+lenth: 10000 b: 10 num_hash: 50 dis: 20.0 false_positive:  0.955409820497
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.315
+Jaccard accuracy= 0.311
+dice accuracy= 0.311
+hamming accuracy= 0.315
+Accuracy = 46.7% (467/1000) (classification)
+Mnist SVM accuracy is  (46.7, 7.994, 0.28229710233796923)
+
+
+-------
+fp=0.978
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.980070143886
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.252
+Jaccard accuracy= 0.243
+dice accuracy= 0.243
+hamming accuracy= 0.251
+Accuracy = 34.8% (348/1000) (classification)
+Mnist SVM accuracy is  (34.8, 10.718, 0.1379182070921055)
+
+lenth: 10000 b: 10 num_hash: 60 dis: 10.0 false_positive:  0.980070143886
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.238
+Jaccard accuracy= 0.233
+dice accuracy= 0.233
+hamming accuracy= 0.238
+Accuracy = 30.4% (304/1000) (classification)
+Mnist SVM accuracy is  (30.4, 12.484999999999999, 0.063084555720022265)
+
+lenth: 10000 b: 10 num_hash: 60 dis: 15.0 false_positive:  0.980070143886
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.159
+Jaccard accuracy= 0.159
+dice accuracy= 0.159
+hamming accuracy= 0.159
+Accuracy = 24.6% (246/1000) (classification)
+Mnist SVM accuracy is  (24.6, 12.79, 0.029571188283961956)
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 60 dis: 20.0 false_positive:  0.980070143886
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.141
+Jaccard accuracy= 0.141
+dice accuracy= 0.141
+hamming accuracy= 0.141
+Accuracy = 20.5% (205/1000) (classification)
+Mnist SVM accuracy is  (20.5, 18.616, 0.023578843141624863)

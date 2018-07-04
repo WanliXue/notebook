@@ -1,0 +1,61 @@
+
+Pearcey (pearcey.hpc.csiro.au) general purpose compute cluster,
+Ruby (ruby.hpc.csiro.au) high memory supercomputer,
+Bragg (bragg-gpu.hpc.csiro.au) GPU cluster.
+ 
+Your password is the same as your NEXUS password.
+Note that the username is in lower case.
+ 
+Please check our quick start guide at:
+https://confluence.csiro.au/display/SC/Quick+Start+Guide+for+Linux
+ 
+For further information on CSIRO SC systems please see the SC User Manual at:
+https://wiki.csiro.au/display/ASC/User+Manual.
+ 
+In particular, please read the 'File System Conventions' section at:
+https://wiki.csiro.au/display/ASC/SC+filesystem+conventions
+ 
+It is imperative that you understand the file systems management policies on SC systems, including:
+   - automated flushing/removal of files
+   - backups are limited to a few file systems
+   - file migration to tape on the CSIRO Data Store
+   - no guarantee of any file recovery in the event of major disasters.
+
+
+
+% ssh -X xue011@ruby.hpc.csiro.au
+
+bragg-gpu.hpc.csiro.au
+
+find quota
+% quota -s -v
+
+
+vnc -s
+
+ruby.hpc.csiro.au:20
+
+(module avail)
+
+module load matlab/R2016a
+
+matlab -nodisplay -nojvm -r ¡®xxx.mat¡¯
+
+sbatch --time=20:00 mem=2400 shellscript
+
+-----------how to create sheelsrcipt
+create a new (plain text) file to contain the jobs script
+start the file with #!/bin/bash
+optional: embed at the start of the file the specification of what compute resources are required (e.g. number of processors, amount of memory and expected wall clock time that the job needs), in lines starting with #SBATCH
+put the commands that the script should execute in the file, one command per line
+save the file
+mark the file as executable with chmod +x
+submit (or queue) the file with the sbatch command
+--------------
+
+
+
+
+squeue -u ho033
+Show full details of a job (ID: 123)
+scontrol show job 123

@@ -1,0 +1,225 @@
+Privacy preserved machine learning paper
+
+
+method:
+
+cs+ bf
+
+
+3 data set
+
+
+proof:
+
+jaccard distance remain?
+
+
+Evaluateion:
+
+privacy trade-off accuracy
+
+
+
+
+note:
+
+codes:
+in python '-0.00' will emerge, however when we set them to string will cause error since str('-0.00')鈮爏tr('0.00'), solution will be extra check of the value when put into the hash queue.
+
+
+Parameter:
+
+Initial with length=1w, b=10, num_hash=5, distance = 5,10,15,20....
+
+this intial start with fp=0.01. with increasing num_hash, 10,15, the fp will increase.
+
+We use com_to_length roughly to 50-100, so length 1w will be enough. 
+
+The start point can be check with indicator ((num_hash*g)/length), e.g., 5500.0 / 10000. With the elements be hashed is fixed (b), so num_hash will decide the fp (collision rate), how crowded it is for a single bf. 
+
+
+Times series data’s privacy ml.
+Anonymization method of location data does not work well, need more research.
+Anonymization of location data does not work: A large-scale measurement study
+
+
+
+为什么不只用cs
+光用cs来做加密，只用一次效果是好的，可以保持高的utility，1但是很容易在多次的使用中被破解（ref）。2无法作为可调控的privacy的工具，没有可用的工具来调控randomness从而控制privacy。
+accumulation attack
+
+
+Jaccard distance
+本身就可以用来分类，需要appropriate的features， MNIST本身就可以.
+
+Knn accuracy= 0.927
+using time:  8.25043201447
+Jaccard accuracy= 0.935
+dice accuracy= 0.935
+hamming accuracy= 0.729
+matching accuracy= 0.93
+kulsinski accuracy= 0.857
+rogerstanimoto accuracy= 0.93
+russellrao accuracy= 0.684
+sokalsneath accuracy= 0.935
+sokalmichener accuracy= 0.93
+
+
+
+cbf space 的可能问题是，用每一组数据去check if membership，但是这才是collision rate带来的安全性，只要不是0 fp，就有一定概率的collision。 对于high dimension的一组data，更加难确定整个是不是在cbf space里。
+
+
+更安全，因为cbf不会reveal (part of) value.
+Intuitively, a privacy breach occurs if a property of the original data record gets revealed if we see a certain value of the randomized record. In our previous example, the randomized age of 120 is an example of a privacy breach as it reveals that the actual age is at least 70. As another example, a privacy breach occurs if a subset within a randomized transaction makes it likely that some item occurs in the original transaction.
+
+
+如果没有collision， hash不会改变entropy，那么隐私度就是一样的
+https://crypto.stackexchange.com/questions/12505/what-happens-to-entropy-after-hashing
+
+
+Thus, the observation on entropy loss also hold if k independent random functions are used, instead of one random function that is iterated k times.
+https://stackoverflow.com/questions/10011233/many-iterations-on-a-hash-doesnt-it-reduces-entropy
+
+
+Jaccard distance 定义和应用
+3.1 Jaccard distance (JacD): The Jaccard distance measures dissimilarity
+between sample sets, it is a complementary to the Jaccard similarity
+coefficient (Jaccard, 1901) and is obtained by subtracting the Jaccard
+coefficient from one. This distance is a metric (Cesare & Xiang,
+2012).
+JacD(x, y) =  equation…
+
+and usage. ref:Distance and Similarity Measures Effect on the
+Performance of K-Nearest Neig
+
+
+hash的fp
+. For example, using
+2 log2 n bits per set element, the probability that two distinct elements yield the
+same hash value is 1/n2. Hence, the probability that any element not in the set
+matches some hash value in the set is at most n/n2 = 1/n by the standard union
+bound.
+
+
+A Hamming distance should be done between two strings of equal length and with the order taken into account.
+
+Distance-Sensitive Bloom Filters
+The relative Hamming distance between two Bloom filters (of the same size, and created with the same hash functions) can be used as a measure of the similarity of the underlying sets (see, e.g., [2]).
+
+https://cs.stackexchange.com/questions/76460/hamming-distance-of-bloom-filters
+
+PROOF:
+2.4 
+Network Applications of
+Bloom Filters: A Survey
+
+https://projecteuclid.org/download/pdf_1/euclid.im/1109191032
+
+Bloom filters can also be used to approximate the intersection between two
+sets. Again, suppose that one has two Bloom filters representing sets S1 and S2
+with the same number of bits and using the same hash functions. Intuitively,
+the inner product of the two bit vectors is a measure of their similarity. More
+formally, the jth bit will be set in both filters if it is set by some element in
+S1 ∩ S2, or if it is set simultaneously by some element in S1 − (S1 ∩ S2) and by
+another element in S2 −(S1 ∩S2). The probability that the jth bit is set in both
+filters is therefore
+.
+equation
+.
+After some algebraic simplification, we find that the expected magnitude of the
+inner product of the two Bloom filters is therefore
+equation.
+.
+Hence, given |S1|, |S2|, k, m, and the magnitude of the inner product, one can
+calculate an estimate of the intersection |S1 ∩ S2| using the equation above.
+Note that if |S1| and |S2| are not given, they can also be estimated by counting
+the number of 0 bits in the Bloom filters for S1 and S2, since as explained in
+Section 2.1, the number of 0 bits for a set S is strongly concentrated around its
+expectation m(1 − 1/m)k|S|
+.
+
+
+
+
+Record bf is secure than field bf
+
+we use more elements for a entire ‘record’, so that’s why can keep a relative high fp.
+
+Uniform bit selection
+
+
+paper strucuter
+——————————————————————
+
+2.relate
+DP
+-random response (RAPPOR used), lapalce(we want to use) and exponential (for non numerical) 
+-definiotn
+
+BF
+
+Jaccard distance?
+…
+
+
+…
+
+3.Threat Model:
+1.protect the value
+2.differential attack (if only one different)
+
+
+4.Methods:
+only with BF
+	- how to use bf
+		-paramter
+		-neigherbours…
+
+	-less privacy but good utility
+BF with DP
+	-proof of dp
+	-better privacy 
+
+privacy check can use similarity check (linear) represent the linkage.
+
+4.1 parameter selection
+
+Discussion:
+BF cannot be compromised to show the raw value.
+
+use Euclidean distance also good though not proved.
+
+
+查询次数的上限 (Bound on the Number of Queries)不影响我们
+
+
+5.privacy check with similarity?
+
+Conclusion
+
+after read through RAPPOR
+-=———————————————————
+Google的RAPPOR虽然解决了对同一个数据的多次上报的隐私泄露问题，但并没有解决多个相关数据上报后产生的隐私泄露问题。
+https://blog.csdn.net/miaoqiucheng/article/details/78113131
+
+本地化差分隐私主要采用随机响应技术 [3] 来保护隐私。
+中心化差分隐私的典型噪音机制是:拉普拉斯噪音机制 [3] 和指数噪音机制 [3]。
+http://www.freebuf.com/articles/database/156677.html
+
+
+
+RAPPOR represent by RR.
+
+RR use random response to fulfil differential privacy
+RR can only to show the true/wrong (category) then histogramly estimate the distribution.
+
+OUR want to regression and classification.
+RR only do single data/string, not matter, represent by token.
+OUR want the cipher represent meaning, which can be used rather than only histogram.
+
+RR need large amount of data to have a good result, like N=1e+05, N=1e+06. N=1E+04 obviously show the error is significant even in distribution perspective. Fig4
+
+
+
+
+

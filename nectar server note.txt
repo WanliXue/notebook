@@ -1,0 +1,58 @@
+Nectar server note
+
+
+server ip, 
+
+203.101.230.199  1
+
+203.101.224.209  2
+
+203.101.225.53	3
+
+203.101.225.81 4
+ 
+show hidden in file selection
+cmd+ shift +.
+
+%ssh -Y -i nectar_shared_key_pair.pem ubuntu@203.101.230.199
+
+ssh -Y ubuntu@203.101.230.199
+
+老师安装了python3的tf，有些有问题，最终重新安装2.7下的
+
+server 1
+source /mnt/wanli/tensorflow_2/bin/activate
+
+server 2
+source /mnt/wanli/tensorflow_raw/bin/activate
+
+server 3
+source /mnt/wanli/tensorflow_2/bin_activate
+
+
+
+/mnt/wanli
+
+Make sure you have made these disks writable, or you will not be able to transfer data onto them.
+wanli and/or
+
+
+python3 not working well
+
+set new tensorflor using
+source /mnt/wanli/tensorflor_2/bin/active
+
+
+
+nohup ./ shell > .log &
+
+ps aux | grep wanli 
+jobs
+
+grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}'
+
+ sess = tf.InteractiveSession(config=tf.ConfigProto(intra_op_parallelism_threads=16))
+
+config = tf.ConfigProto(intra_op_parallelism_threads=1, inter_op_parallelism_threads=1, \
+                        allow_soft_placement=True, device_count = {'CPU': 16})
+session = tf.Session(config=config)

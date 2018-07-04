@@ -1,0 +1,5 @@
+Deep learning note
+
+有几个3维的卷积fileter就有几个输出，例如
+32x32x3 用两个5x5x3的filter，生成28x28x2的中间层
+3代表3维

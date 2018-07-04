@@ -1,0 +1,51 @@
+Differential privacy note
+———————————
+http://blog.csdn.net/charwing/article/details/27053895
+http://www.win-vector.com/blog/2015/10/a-simpler-explanation-of-differential-privacy/
+
+The adversary’s goal is to use A() to tell between S and S’, representing a failure of privacy. The learner wants to extract useful statistics from S and S’ without violating privacy. Identifying a unique row (the one which changed markings) violates privacy. If the adversary can tell which set (S or S’) the learner is working on by the value of A(), then privacy is violated.
+
+choose mean pixel of images as sensity, so no one can tell if a single image in that imageset.
+Different Privacy 定义了一种更放松的隐私保护。它表明了攻击者都会得到相似的输出，无论数据表里包不包含任意个体的信息。
+
+
+[How Much Is Enough? Choosing ε for Differential Privacy]
+Even for the same value of ε, the probability of identifying an individual enforced by differential privacy is different depending on the universe.
+ The main focus of study has been how to safely release database while preserving privacy for a particular function f . For example, [5] studies how to release count queries and [9] touches on more general query functions such as histograms and linear algebraic functions.
+The concept of global sensitivity was introduced in [6] and it has been shown that releasing a database with noise proportional to the global sensitivity of the query functions achieves differential privacy.
+It is still the responsibility of users who use the system to select the value of ε that prohibits any inferences on the dataset beyond what is allowed.
+
+即使有其它的数据库也不能够得到单独一个人（一张照片的信息）
+
+要用什么程度的 noise
+必须要区分individual 因为已经有paper的attack可以看individual， [membship inference attack]
+
+[stealing ML model via prediction API]
+Some allow users to train models on potentially sensitive data and charge others for access on a pay-per-query basis.
+Cloud-based ML services often allow model owners to charge others for queries to their commercially valuable models. This pay-per-query deployment option exem- plifies an increasingly common tension: The query in- terface of an ML model may be widely accessible, yet the model itself and the data on which it was trained may be proprietary and confidential. 
+2.Models may also be privacy-sensitive because they leak information about training data [4, 23, 24]. 
+
+The adversary’s goal is to extract an equivalent or near-equivalent ML model, i.e., one that achieves (close to) 100% agreement on an input space of interest.
+
+要保证 用户可以用，但是不知道很具体的 an equivalent or near-equivalent ML model,
+
+减少最后的输出，使得可以分一类（5）类，但是精确度低，定期更新
+
+------------开始往weight上加noise----------
+
+
+batch size, iteration, epoche
+
+In the neural network terminology:
+
+one epoch = one forward pass and one backward pass of all the training examples
+batch size = the number of training examples in one forward/backward pass. The higher the batch size, the more memory space you'll need.
+number of iterations = number of passes, each pass using [batch size] number of examples. To be clear, one pass = one forward pass + one backward pass (we do not count the forward pass and backward pass as two different passes).
+Example: if you have 1000 training examples, and your batch size is 500, then it will take 2 iterations to complete 1 epoch.
+
+https://stats.stackexchange.com/questions/153531/what-is-batch-size-in-neural-network
+
+-------
+http://cnnlocalization.csail.mit.edu/
+
+heatmap is the class activation map

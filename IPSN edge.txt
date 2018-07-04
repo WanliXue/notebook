@@ -1,0 +1,13 @@
+get_trainingdata.m
+
+add lp noise to 192x168
+ In the literature, privacy settings of ε = ln 2 or ε = ln 3 are considered as providing acceptable levels of privacy, although Dwork (2008) suggested that in some cases much higher values of ε could provide meaningful privacy guarantees.(dali paper)
+
+ eigenface knn finished accuracy low
+
+
+ nohup matlab -nojvm -nodisplay -r 'main.m' 
+
+ fisher  eps 8  	eps 5				eps 2            eps ln2
+ 	knn  0.8631  accuracy=0.834211  accuracy=0.407895  accuracy=0.073684
+ 	src	 0.9105		acc=0.9079			acc =0.7053					acc =0.2000

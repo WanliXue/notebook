@@ -1,0 +1,294 @@
+private_SGD
+
+
+!!!!!
+front_layer=np.load('front_layer.npy')
+sess.run(w1.assign(front_layer))
+
+
+using (P*Q)
+-------------------------------------
+eps = 0.5  (SVD)
+--------------------
+k=10 ('accuracy is: ', 0.89840001)
+
+k=9  ('accuracy is: ', 0.89529997)
+k=8  ('accuracy is: ', 0.86119998)
+k=7  ('accuracy is: ', 0.85780001)
+k=6  ('accuracy is: ', 0.84460002)
+k=5  ('accuracy is: ', 0.6796)
+
+
+
+eps = 2 (SVD)
+----------------------
+k=10 ('accuracy is: ', 0.91829997)
+
+k=9  ('accuracy is: ', 0.90700001)
+k=8  ('accuracy is: ', 0.90009999)
+k=7  ('accuracy is: ', 0.87099999)
+k=6  ('accuracy is: ', 0.7277)
+k=5  ('accuracy is: ', 0.65960002)
+
+
+eps = 8 (SVD)
+-----------------------
+k=10 ('accuracy is: ', 0.92159998)
+
+k=9  ('accuracy is: ', 0.92189997)
+k=8  ('accuracy is: ', 0.85780001)
+k=7  ('accuracy is: ', 0.79579997)
+k=6  ('accuracy is: ', 0.74559999)
+k=5  ('accuracy is: ', 0.68239999)
+
+
+
+----------------------------------------------------
+raw tensorflow +b
+20k
+0.9257
+
+
+after SVD k=10 makeback (P*Q)
+0.9102
+
+
+seprate P and Q
+k=10  0.9136
+
+k=9 0.9016
+
+
+
+ALS
+----------------------------------
+
+no noise
+----------------------
+Using Dinusha parrameter
+no noise lambda=0.003
+k=10  0.9122
+k=9 0.8989
+
+
+
+after laplace noise  , |R| set as size 
+------------
+eps=10 k=10 iter=1 0.1014
+eps=10 k=10 iter=3 0.1733
+
+eps=50 k=10 iter=3 0.1315
+
+eps=100 k=10 iter=2 0.3725
+
+eps=500 k=10 iter=2 0.4328
+
+eps=1000 k=10 iter=2 0.5231
+
+
+
+eps=1500 k=10 iter=2 0.5918
+eps=1500 k=10 iter=3 0.837
+eps=1500 k=10 iter=4 0.8128
+
+
+eps=1750 k=10 iter=3 0.852
+
+eps=1850 k=10 iter=3 0.6345
+
+eps=2000 k=10 iter=2 0.4927 
+eps=2000 k=10 iter=3 0.7955
+
+
+eps=10 K=10 iter=10 acc=0.7955  error=0.2209
+#eps=2 K=10 iter=10 acc=0.7955  error=0.2209
+-------------------------------------------------
+
+
+old_parameter   noise = beta.*gamrnd (1 ,beta,1,s);
+---------------------------------------------------
+iteration=1
+eps=0.5 acc=0.9131
+eps=2  acc=0.9096
+eps=8  acc=0.8793
+
+iteration=3
+eps=0.5  acc=0.9136  totalerr =0.0168
+
+iteration=5
+eps=0.5 acc=0.9134	totalerr =0.0150
+
+iteration=20
+eps=2 acc=0.0839 totalerr=0.5947
+
+
+no clampped
+--------------
+iteration=1
+eps=0.5 totalerr =0.0251  acc=0.9131
+eps=2 totalerr =0.0253 acc=0.909
+
+
+noise = gamrnd (1 ,beta,1,s);
+--------------------------------------
+eps=0.5 totalerr =0.0425  acc=0.8947
+eps=2 totalerr =0.0944   acc=0.8334
+eps=8 totalerr = 0.1349  acc=0.6398
+
+
+iteration=10
+-------------
+eps=0.5 totalerr =0.0182 acc=0.9131
+eps=2 totalerr= 0.0241  acc=0.9104
+eps=8 totalerr =0.0448  acc=0.9039
+-----------------------------------------------
+
+
+raw
+------------
+0.03 
+acc=0.65
+
+0.003 i=1
+acc=0.9122
+
+
+0.003 i=1 e200
+acc=0.1838
+
+0.003 i=3 e200
+acc=0.5484
+
+0.003_5i_e200
+acc=0.5171
+
+0.003_10i_e200
+acc=0.3601
+
+
+
+
+0.003 i=1 e500
+acc=0.179
+
+0.003 i=3 e500
+acc=0.6534
+
+0.003 i=10 e500
+0.6067
+
+.003_3i_e700
+acc=0.6803
+
+
+0.003 i=3 e800
+acc=0.7668
+
+0.003 i=1 e900
+acc=0.1114
+
+0.003 i=2 e900
+acc=0.6184
+
+0.003 i=3 e900
+acc=0.8038
+
+0.003 i=3 e950
+acc=0.6803
+
+0.003 i=2 e1000
+acc=0.5916
+
+0.003 i=3 e1000
+acc=0.6199
+
+0.003 i=3 e1500
+acc=0.7635
+
+0.003 i=3 e2000
+acc=0.8238
+
+0.003 i=3 e2500
+0.7783
+
+0.003 i=1 e3000
+0.285
+
+
+0.003 i=2 e3000
+0.563
+
+0.003 i=3 e3000
+0.8505
+
+0.003 i=1 e5000
+0.4192
+
+0.003 i=3 e5000
+0.7352
+-----------
+
+_3_20i.npy
+acc=0.1044
+
+
+
+
+
+eps=8
+als_laplace_0.03
+---------------------------------------------
+i=10
+acc=0.1321
+
+
+i=15
+0.1327
+
+0.03_10i_e2
+acc=0.081
+
+0.03_10i_e4
+acc=0.0913
+
+
+0.03_10i_e8
+#acc=0.1232
+
+0.03_30i_e8
+acc=0.1082
+
+
+
+
+0.03 i=10. eps=200
+acc=0.321
+
+0.03_20i_e200
+ac=0.268
+
+
+
+
+
+
+als_laplace_0.003
+---------------------------------------------
+i=15
+tor=0.3201
+acc=0.1302
+
+i=15 noclamp
+tor=1.4436e+36
+acc=0.1205
+
+
+i=15
+labda=0.3
+acc=0.1347
+
+
+i=1
+labda=0.3
+acc=0.0937
+

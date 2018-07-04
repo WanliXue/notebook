@@ -1,0 +1,870 @@
+# HAR SVM-----    #0.92
+# length = 10000 b = 2 num_hash = 2 dis = float(5)  fp=0.4 acc = 0.80
+# length = 10000 b = 2 num_hash = 5 dis = float(5)  fp=0.1 acc = 0.84
+# length = 10000 b = 5 num_hash = 15 dis = float(5)  fp=0.001 acc = 0.89
+# length = 10000 b = 5 num_hash = 10 dis = float(5)  fp=0.01   acc= 0.89
+# length = 10000 b = 5 num_hash = 2 dis = float(5)  fp=0.4 acc = 0.87
+# length = 10000 b = 5 num_hash = 5 dis = float(5)  fp=0.1 acc = 0.88
+# length = 10000 b = 10 num_hash = 5 dis = float(5)  fp=0.1 acc = 0.90
+# length = 10000 b = 15 num_hash = 5 dis = float(5)  fp=0.1 acc = 0.886
+
+
+# knn
+# length = 10000 b = 2 num_hash = 5 dis = float(5)  fp=0.1 accuracy is:  0.69
+# lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275  acc=0.690872073295
+# lenth: 10000 b: 10 num_hash: 5 dis: 20.0 false_positive:  0.100925190275 acc=0.690872073295
+# lenth: 10000 b: 5 num_hash: 15 dis: 5.0 false_positive:  0.0010280132933 acc=0.690872073295
+
+# ----- new result-----
+
+固定lengh，通过调整num_hash 和b 来确定fp,没次4个distance，对应四个server
+b固定10左右
+fix length = 1w
+com_to_length=50
+
+dis = 5, 10, 15,20
+num_hash,b
+
+f= (1 -e^(-num_hash * [(2*b+2)*com_to_len] /length))^num_hash
+
+——————
+fp=0.01
+
+length = 10000
+b = 10
+num_hash=5
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 89.0397% (2624/2947) (classification)
+SVM using time:  451.899361849
+svm_accuracy= (89.03970139124533, 0.1493043773328809, 0.9522035822412807)
+Start KNN
+Knn accuracy= 0.850695622667
+using time:  613.059280872
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+accuracy is:  0.850695622667
+
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 89.5487% (2639/2947) (classification)
+SVM using time:  410.622353077
+svm_accuracy= (89.54869358669833, 0.14421445537835087, 0.9540892722052338)
+Start KNN
+Knn accuracy= 0.817780794028
+using time:  639.689125061
+lenth: 10000 b: 10 num_hash: 5 dis: 10.0 false_positive:  0.100925190275
+accuracy is:  0.817780794028
+
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 86.5965% (2552/2947) (classification)
+SVM using time:  371.067052841
+svm_accuracy= (86.59653885307092, 0.19511367492365117, 0.9385011058566618)
+Start KNN
+Knn accuracy= 0.747879199186
+using time:  704.120490074
+lenth: 10000 b: 10 num_hash: 5 dis: 15.0 false_positive:  0.100925190275
+accuracy is:  0.747879199186
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 86.5965% (2552/2947) (classification)
+SVM using time:  380.757673979
+svm_accuracy= (86.59653885307092, 0.2022395656599932, 0.9370017776437463)
+Start KNN
+Knn accuracy= 0.727519511367
+using time:  639.31425786
+lenth: 10000 b: 10 num_hash: 5 dis: 20.0 false_positive:  0.100925190275
+accuracy is:  0.727519511367
+
+——————
+
+fp=0.02
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 90.5327% (2668/2947) (classification)
+SVM using time:  457.236817837
+svm_accuracy= (90.53274516457414, 0.13030200203596878, 0.9577091119222262)
+Start KNN
+Knn accuracy= 0.8432304038
+using time:  326.519510984
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+accuracy is:  0.8432304038
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 89.0058% (2623/2947) (classification)
+SVM using time:  523.733305931
+svm_accuracy= (89.00576857821514, 0.1476077366813709, 0.9530336618838677)
+Start KNN
+Knn accuracy= 0.803529012555
+using time:  600.300188065
+lenth: 10000 b: 10 num_hash: 10 dis: 10.0 false_positive:  0.233602440978
+accuracy is:  0.803529012555
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 86.6644% (2554/2947) (classification)
+SVM using time:  660.306766987
+svm_accuracy= (86.66440447913132, 0.1974889718357652, 0.9375365516161268)
+Start KNN
+Knn accuracy= 0.755683746183
+using time:  690.665440083
+lenth: 10000 b: 10 num_hash: 10 dis: 15.0 false_positive:  0.233602440978
+accuracy is:  0.755683746183
+
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 86.2911% (2543/2947) (classification)
+SVM using time:  583.885576963
+svm_accuracy= (86.29114353579912, 0.19714964370546317, 0.9385421360720864)
+Start KNN
+Knn accuracy= 0.723447573804
+using time:  679.962511063
+lenth: 10000 b: 10 num_hash: 10 dis: 20.0 false_positive:  0.233602440978
+accuracy is:  0.723447573804
+
+
+
+——————
+fp:  0.09
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 89.379% (2634/2947) (classification)
+SVM using time:  743.367243052
+svm_accuracy= (89.37902952154734, 0.14794706481167288, 0.9524824398236716)
+Start KNN
+Knn accuracy= 0.84289107567
+using time:  626.349098206
+Jaccard accuracy= 0.8432304038
+dice accuracy= 0.8432304038
+hamming accuracy= 0.84289107567
+matching accuracy= 0.84289107567
+kulsinski accuracy= 0.844587716322
+rogerstanimoto accuracy= 0.84289107567
+russellrao accuracy= 0.821513403461
+sokalsneath accuracy= 0.8432304038
+sokalmichener accuracy= 0.84289107567
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+accuracy is:  0.84289107567
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 85.2732% (2513/2947) (classification)
+SVM using time:  815.737001896
+svm_accuracy= (85.27315914489311, 0.21852731591448932, 0.9308184271244145)
+Start KNN
+Knn accuracy= 0.749575839837
+using time:  649.764126062
+Jaccard accuracy= 0.750933152358
+dice accuracy= 0.750933152358
+hamming accuracy= 0.749575839837
+matching accuracy= 0.749236511707
+kulsinski accuracy= 0.750593824228
+rogerstanimoto accuracy= 0.749236511707
+russellrao accuracy= 0.743467933492
+sokalsneath accuracy= 0.750933152358
+sokalmichener accuracy= 0.749236511707
+lenth: 10000 b: 10 num_hash: 20 dis: 15.0 false_positive:  0.360096359218
+accuracy is:  0.749236511707
+
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 85.2732% (2513/2947) (classification)
+SVM using time:  706.828186035
+svm_accuracy= (85.27315914489311, 0.21852731591448932, 0.9308184271244145)
+Start KNN
+Knn accuracy= 0.749575839837
+using time:  667.701925039
+Jaccard accuracy= 0.750933152358
+dice accuracy= 0.750933152358
+hamming accuracy= 0.749575839837
+matching accuracy= 0.749236511707
+kulsinski accuracy= 0.750593824228
+rogerstanimoto accuracy= 0.749236511707
+russellrao accuracy= 0.743467933492
+sokalsneath accuracy= 0.750933152358
+sokalmichener accuracy= 0.749236511707
+lenth: 10000 b: 10 num_hash: 20 dis: 15.0 false_positive:  0.360096359218
+accuracy is:  0.749236511707
+
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 86.4947% (2549/2947) (classification)
+SVM using time:  726.004331827
+svm_accuracy= (86.49474041398032, 0.1849338310145911, 0.942100206221634)
+Start KNN
+Knn accuracy= 0.728198167628
+using time:  641.242605925
+Jaccard accuracy= 0.726162198846
+dice accuracy= 0.726162198846
+hamming accuracy= 0.727858839498
+matching accuracy= 0.727519511367
+kulsinski accuracy= 0.72989480828
+rogerstanimoto accuracy= 0.727519511367
+russellrao accuracy= 0.713946386155
+sokalsneath accuracy= 0.726162198846
+sokalmichener accuracy= 0.727519511367
+lenth: 10000 b: 10 num_hash: 20 dis: 20.0 false_positive:  0.360096359218
+accuracy is:  0.727519511367
+
+
+
+
+*************
+——————
+fp= 0.1
+
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 84.2891% (2484/2947) (classification)
+SVM using time:  936.574402094
+svm_accuracy= (84.28910756701731, 0.2500848320325755, 0.9212475380145317)
+Start KNN
+Knn accuracy= 0.667458432304
+using time:  615.972660065
+Jaccard accuracy= 0.663725822871
+dice accuracy= 0.663725822871
+hamming accuracy= 0.667119104174
+matching accuracy= 0.666779776043
+kulsinski accuracy= 0.656599932134
+rogerstanimoto accuracy= 0.666779776043
+russellrao accuracy= 0.622667119104
+sokalsneath accuracy= 0.663725822871
+sokalmichener accuracy= 0.666779776043
+lenth: 10000 b: 2 num_hash: 138 dis: 5.0 false_positive:  0.393378343532
+accuracy is:  0.666779776043
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 59.4164% (1751/2947) (classification)
+SVM using time:  1854.16437697
+svm_accuracy= (59.416355615880555, 0.6460807600950119, 0.8033926758500421)
+Start KNN
+Knn accuracy= 0.385137427893
+using time:  617.328245878
+Jaccard accuracy= 0.385137427893
+dice accuracy= 0.385137427893
+hamming accuracy= 0.385137427893
+matching accuracy= 0.384798099762
+kulsinski accuracy= 0.386155412284
+rogerstanimoto accuracy= 0.384798099762
+russellrao accuracy= 0.351204614863
+sokalsneath accuracy= 0.385137427893
+sokalmichener accuracy= 0.384798099762
+lenth: 10000 b: 2 num_hash: 138 dis: 15.0 false_positive:  0.393378343532
+accuracy is:  0.384798099762
+
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 50.1188% (1477/2947) (classification)
+SVM using time:  2138.25968885
+svm_accuracy= (50.1187648456057, 0.9110960298608755, 0.7289531491362915)
+Start KNN
+Knn accuracy= 0.344418052257
+using time:  628.692523956
+Jaccard accuracy= 0.34882931795
+dice accuracy= 0.34882931795
+hamming accuracy= 0.343739395996
+matching accuracy= 0.346454021038
+kulsinski accuracy= 0.347472005429
+rogerstanimoto accuracy= 0.346454021038
+russellrao accuracy= 0.267390566678
+sokalsneath accuracy= 0.34882931795
+sokalmichener accuracy= 0.346454021038
+lenth: 10000 b: 2 num_hash: 138 dis: 20.0 false_positive:  0.393378343532
+accuracy is:  0.346454021038
+*****************
+
+--------—————
+fp:  0.32
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 88.2592% (2601/2947) (classification)
+SVM using time:  839.924010992
+svm_accuracy= (88.25924669155073, 0.16016287750254496, 0.948415868071673)
+Start KNN
+Knn accuracy= 0.82049541907
+using time:  607.221652985
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+accuracy is:  0.82049541907
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 87.4109% (2576/2947) (classification)
+SVM using time:  746.702848911
+svm_accuracy= (87.41092636579573, 0.19714964370546317, 0.9378788040004518)
+Start KNN
+Knn accuracy= 0.772989480828
+using time:  671.435325861
+lenth: 10000 b: 10 num_hash: 30 dis: 10.0 false_positive:  0.574322953125
+accuracy is:  0.772989480828
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 85.5107% (2519/2947) (classification)
+SVM using time:  706.85850811
+svm_accuracy= (85.5106888361045, 0.20902612826603326, 0.9343359795219826)
+Start KNN
+Knn accuracy= 0.749575839837
+using time:  673.995222092
+lenth: 10000 b: 10 num_hash: 30 dis: 15.0 false_positive:  0.574322953125
+accuracy is:  0.749575839837
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 86.4269% (2547/2947) (classification)
+SVM using time:  782.378565073
+svm_accuracy= (86.42687478791991, 0.20699015948422125, 0.9357103699966236)
+Start KNN
+Knn accuracy= 0.667119104174
+using time:  653.009282827
+lenth: 10000 b: 10 num_hash: 30 dis: 20.0 false_positive:  0.574322953125
+accuracy is:  0.667119104174
+
+------------
+fp= 0.61
+
+Accuracy = 87.3431% (2574/2947) (classification)
+SVM using time:  870.454576015
+svm_accuracy= (87.34306073973532, 0.17950458092975907, 0.9424252143115028)
+Start KNN
+Knn accuracy= 0.793688496776
+using time:  736.49889183
+Jaccard accuracy= 0.793009840516
+dice accuracy= 0.793009840516
+hamming accuracy= 0.793688496776
+matching accuracy= 0.793009840516
+kulsinski accuracy= 0.780454699695
+rogerstanimoto accuracy= 0.793009840516
+russellrao accuracy= 0.756023074313
+sokalsneath accuracy= 0.793009840516
+sokalmichener accuracy= 0.793009840516
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+accuracy is:  0.793009840516
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 84.9338% (2503/2947) (classification)
+SVM using time:  815.963243961
+svm_accuracy= (84.9338310145911, 0.23888700373260943, 0.9259309575640517)
+Start KNN
+Knn accuracy= 0.723786901934
+using time:  722.574806929
+Jaccard accuracy= 0.723786901934
+dice accuracy= 0.723786901934
+hamming accuracy= 0.724126230064
+matching accuracy= 0.723108245674
+kulsinski accuracy= 0.70783847981
+rogerstanimoto accuracy= 0.723108245674
+russellrao accuracy= 0.644723447574
+sokalsneath accuracy= 0.723786901934
+sokalmichener accuracy= 0.723108245674
+lenth: 10000 b: 10 num_hash: 40 dis: 10.0 false_positive:  0.763051328521
+accuracy is:  0.723108245674
+
+Accuracy = 83.2711% (2454/2947) (classification)
+SVM using time:  774.755623817
+svm_accuracy= (83.2711231761113, 0.24872751951136748, 0.9224599392783985)
+Start KNN
+Knn accuracy= 0.688496776383
+using time:  706.42648387
+Jaccard accuracy= 0.689514760774
+dice accuracy= 0.689514760774
+hamming accuracy= 0.688836104513
+matching accuracy= 0.687139463862
+kulsinski accuracy= 0.681031557516
+rogerstanimoto accuracy= 0.687139463862
+russellrao accuracy= 0.653545978962
+sokalsneath accuracy= 0.689514760774
+sokalmichener accuracy= 0.687139463862
+lenth: 10000 b: 10 num_hash: 40 dis: 15.0 false_positive:  0.763051328521
+accuracy is:  0.687139463862
+
+Accuracy = 83.2033% (2451/2947) (classification)
+SVM using time:  844.468528986
+svm_accuracy= (83.20325755005089, 0.26772989480827963, 0.9162557034109269)
+Start KNN
+Knn accuracy= 0.641330166271
+using time:  633.056911945
+Jaccard accuracy= 0.642348150662
+dice accuracy= 0.642348150662
+hamming accuracy= 0.64099083814
+matching accuracy= 0.64099083814
+kulsinski accuracy= 0.638276213098
+rogerstanimoto accuracy= 0.64099083814
+russellrao accuracy= 0.579572446556
+sokalsneath accuracy= 0.642348150662
+sokalmichener accuracy= 0.64099083814
+lenth: 10000 b: 10 num_hash: 40 dis: 20.0 false_positive:  0.763051328521
+accuracy is:  0.64099083814
+
+
+--------------
+fp=0.8148
+
+Start SVM
+Accuracy = 83.7462% (2468/2947) (classification)
+SVM using time:  1109.60292697
+svm_accuracy= (83.7461825585341, 0.2724804886325076, 0.9154639877511197)
+Start KNN
+Knn accuracy= 0.711910417374
+using time:  774.182960987
+Jaccard accuracy= 0.710553104852
+dice accuracy= 0.710553104852
+hamming accuracy= 0.712249745504
+matching accuracy= 0.710892432983
+kulsinski accuracy= 0.673227010519
+rogerstanimoto accuracy= 0.710892432983
+russellrao accuracy= 0.58398371225
+sokalsneath accuracy= 0.710553104852
+sokalmichener accuracy= 0.710892432983
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+accuracy is:  0.710892432983
+
+Start SVM
+Accuracy = 81.303% (2395/2947) (classification)
+SVM using time:  1072.34863901
+svm_accuracy= (81.30302002035968, 0.3199864268747879, 0.9004027489610162)
+Start KNN
+Knn accuracy= 0.65218866644
+using time:  744.103111029
+Jaccard accuracy= 0.66304716661
+dice accuracy= 0.66304716661
+hamming accuracy= 0.65184933831
+matching accuracy= 0.653206650831
+kulsinski accuracy= 0.636240244316
+rogerstanimoto accuracy= 0.653206650831
+russellrao accuracy= 0.540889039701
+sokalsneath accuracy= 0.66304716661
+sokalmichener accuracy= 0.653206650831
+lenth: 10000 b: 10 num_hash: 50 dis: 10.0 false_positive:  0.883299043195
+accuracy is:  0.653206650831
+
+Accuracy = 76.281% (2247/2947) (classification)
+SVM using time:  1414.00744915
+svm_accuracy= (76.28096369189005, 0.41126569392602647, 0.8769529187559666)
+Start KNN
+Knn accuracy= 0.591788259247
+using time:  695.098002195
+Jaccard accuracy= 0.589073634204
+dice accuracy= 0.589073634204
+hamming accuracy= 0.592127587377
+matching accuracy= 0.591109602986
+kulsinski accuracy= 0.58432304038
+rogerstanimoto accuracy= 0.591109602986
+russellrao accuracy= 0.522904648795
+sokalsneath accuracy= 0.589073634204
+sokalmichener accuracy= 0.591109602986
+lenth: 10000 b: 10 num_hash: 50 dis: 15.0 false_positive:  0.883299043195
+accuracy is:  0.591109602986
+
+Accuracy = 76.8239% (2264/2947) (classification)
+SVM using time:  1308.98171902
+svm_accuracy= (76.82388870037326, 0.4638615541228368, 0.8604818719629258)
+Start KNN
+Knn accuracy= 0.621988462844
+using time:  659.753303051
+Jaccard accuracy= 0.619952494062
+dice accuracy= 0.619952494062
+hamming accuracy= 0.621309806583
+matching accuracy= 0.619613165931
+kulsinski accuracy= 0.599253478113
+rogerstanimoto accuracy= 0.619613165931
+russellrao accuracy= 0.490329148286
+sokalsneath accuracy= 0.619952494062
+sokalmichener accuracy= 0.619613165931
+lenth: 10000 b: 10 num_hash: 50 dis: 20.0 false_positive:  0.883299043195
+accuracy is:  0.619613165931
+
+
+
+
+------------
+fp=0.92
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+Start SVM
+Accuracy = 74.0414% (2182/2947) (classification)
+SVM using time:  1425.13699818
+svm_accuracy= (74.04139803189685, 0.7013912453342382, 0.7896708182620502)
+Start KNN
+Knn accuracy= 0.569392602647
+using time:  694.575095177
+Jaccard accuracy= 0.545639633526
+dice accuracy= 0.545639633526
+hamming accuracy= 0.569731930777
+
+lenth: 10000 b: 10 num_hash: 60 dis: 10.0 false_positive:  0.946733274133
+BF start
+BF filter done
+Start SVM
+Accuracy = 73.9057% (2178/2947) (classification)
+SVM using time:  1738.48509216
+svm_accuracy= (73.90566677977604, 0.5673566338649474, 0.8453626116222985)
+Start KNN
+Knn accuracy= 0.563284696301
+using time:  846.943673849
+Jaccard accuracy= 0.555819477435
+dice accuracy= 0.555819477435
+
+
+lenth: 10000 b: 10 num_hash: 60 dis: 15.0 false_positive:  0.946733274133
+BF start
+BF filter done
+Start SVM
+Accuracy = 65.66% (1934/2947) (classification)
+SVM using time:  1675.20874214
+svm_accuracy= (65.65999321343739, 0.6165592127587377, 0.8198450827199698)
+Start KNN
+Knn accuracy= 0.482524601289
+using time:  622.612407923
+Jaccard accuracy= 0.491007804547
+dice accuracy= 0.491007804547
+hamming accuracy= 0.481167288768
+
+
+lenth: 10000 b: 10 num_hash: 60 dis: 20.0 false_positive:  0.946733274133
+BF start
+BF filter done
+Start SVM
+Accuracy = 66.4404% (1958/2947) (classification)
+SVM using time:  1880.65676689
+svm_accuracy= (66.440447913132, 0.829317950458093, 0.7500215538232475)
+Start KNN
+Knn accuracy= 0.545639633526
+using time:  603.424755096
+Jaccard accuracy= 0.540549711571
+dice accuracy= 0.540549711571
+hamming accuracy= 0.546318289786
+
+
+--------------------
+fp=0.96
+
+Compress done
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+Start SVM
+Accuracy = 55.8873% (1647/2947) (classification)
+SVM using time:  2018.01578808
+svm_accuracy= (55.88734306073974, 1.676620291822192, 0.5108905441967211)
+Start KNN
+Knn accuracy= 0.435018663047
+using time:  667.188838005
+Jaccard accuracy= 0.429250084832
+dice accuracy= 0.429250084832
+hamming accuracy= 0.435018663047
+
+lenth: 10000 b: 10 num_hash: 70 dis: 10.0 false_positive:  0.968792254415
+BF start
+BF filter done
+Start SVM
+Accuracy = 64.0991% (1889/2947) (classification)
+SVM using time:  1641.74903083
+svm_accuracy= (64.09908381404819, 0.7865626060400407, 0.80517380700503)
+Start KNN
+Knn accuracy= 0.547675602307
+using time:  582.286005974
+Jaccard accuracy= 0.544960977265
+dice accuracy= 0.544960977265
+hamming accuracy= 0.547336274177
+
+lenth: 10000 b: 10 num_hash: 70 dis: 15.0 false_positive:  0.968792254415
+BF start
+BF filter done
+Start SVM
+Accuracy = 38.9209% (1147/2947) (classification)
+SVM using time:  2882.92561102
+svm_accuracy= (38.920936545639634, 5.501187648456057, 0.0682155524345325)
+Start KNN
+Knn accuracy= 0.297930098405
+using time:  322.217092991
+Jaccard accuracy= 0.298608754666
+dice accuracy= 0.298608754666
+hamming accuracy= 0.297251442145
+
+lenth: 10000 b: 10 num_hash: 70 dis: 20.0 false_positive:  0.968792254415
+BF start
+BF filter done
+Start SVM
+Accuracy = 59.3146% (1748/2947) (classification)
+SVM using time:  2259.58171082
+svm_accuracy= (59.314557176789954, 1.1493043773328808, 0.6876727358310323)
+Start KNN
+Knn accuracy= 0.483881913811
+using time:  267.179337978
+Jaccard accuracy= 0.486257210723
+dice accuracy= 0.486257210723
+hamming accuracy= 0.484899898202
+
+
+-----------------
+fp=0.98
+
+
+
+—————---------
+false_positive:  0.94
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 57.9233% (1707/2947) (classification)
+SVM using time:  2311.14139581
+svm_accuracy= (57.92331184255175, 1.2935188327112317, 0.6223837279438875)
+Start KNN
+Knn accuracy= 0.30335934849
+using time:  625.730648041
+Jaccard accuracy= 0.29250084832
+dice accuracy= 0.29250084832
+hamming accuracy= 0.302002035969
+matching accuracy= 0.299287410926
+kulsinski accuracy= 0.24703087886
+rogerstanimoto accuracy= 0.299287410926
+russellrao accuracy= 0.196470987445
+sokalsneath accuracy= 0.29250084832
+sokalmichener accuracy= 0.299287410926
+lenth: 10000 b: 20 num_hash: 30 dis: 5.0 false_positive:  0.973002196366
+accuracy is:  0.299287410926
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 74.1093% (2184/2947) (classification)
+SVM using time:  1253.14235902
+svm_accuracy= (74.10926365795724, 0.6230064472344757, 0.8127366626849561)
+Start KNN
+Knn accuracy= 0.587716321683
+using time:  654.568142891
+Jaccard accuracy= 0.574821852732
+dice accuracy= 0.574821852732
+hamming accuracy= 0.588055649813
+matching accuracy= 0.586698337292
+kulsinski accuracy= 0.542585680353
+rogerstanimoto accuracy= 0.586698337292
+russellrao accuracy= 0.453342382083
+sokalsneath accuracy= 0.574821852732
+sokalmichener accuracy= 0.586698337292
+lenth: 10000 b: 20 num_hash: 30 dis: 10.0 false_positive:  0.973002196366
+accuracy is:  0.586698337292
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 49.7116% (1465/2947) (classification)
+SVM using time:  2340.26917195
+svm_accuracy= (49.7115710892433, 1.7360027146250425, 0.528724773656797)
+Start KNN
+Knn accuracy= 0.25890736342
+using time:  686.072844028
+Jaccard accuracy= 0.259586019681
+dice accuracy= 0.259586019681
+hamming accuracy= 0.259246691551
+matching accuracy= 0.25890736342
+kulsinski accuracy= 0.24703087886
+rogerstanimoto accuracy= 0.25890736342
+russellrao accuracy= 0.218187987784
+sokalsneath accuracy= 0.259586019681
+sokalmichener accuracy= 0.25890736342
+lenth: 10000 b: 20 num_hash: 30 dis: 15.0 false_positive:  0.973002196366
+accuracy is:  0.25890736342
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 63.3526% (1867/2947) (classification)
+SVM using time:  1348.88846588
+svm_accuracy= (63.35256192738378, 0.5951815405497116, 0.8246834191645135)
+Start KNN
+Knn accuracy= 0.542246352223
+using time:  558.751749039
+Jaccard accuracy= 0.531727180183
+dice accuracy= 0.531727180183
+hamming accuracy= 0.542246352223
+matching accuracy= 0.545978961656
+kulsinski accuracy= 0.524601289447
+rogerstanimoto accuracy= 0.545978961656
+russellrao accuracy= 0.421445537835
+sokalsneath accuracy= 0.531727180183
+sokalmichener accuracy= 0.545978961656
+lenth: 10000 b: 20 num_hash: 30 dis: 20.0 false_positive:  0.973002196366
+accuracy is:  0.545978961656
+
+
+
+fix length=1w
+hash=10
+only b =20 10….—
+
+—————
+fp=fp:  0.600080293976
+
+length = 10000
+b = 20
+num_hash=10
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 89.3112% (2632/2947) (classification)
+SVM using time:  1650.55044699
+svm_accuracy= (89.31116389548694, 0.15473362741771293, 0.9506165971800945)
+Start KNN
+Knn accuracy= 0.536477774007
+using time:  642.834964991
+Jaccard accuracy= 0.536817102138
+dice accuracy= 0.536817102138
+hamming accuracy= 0.536477774007
+matching accuracy= 0.536477774007
+kulsinski accuracy= 0.529012555141
+rogerstanimoto accuracy= 0.536477774007
+russellrao accuracy= 0.524261961317
+sokalsneath accuracy= 0.536817102138
+sokalmichener accuracy= 0.536477774007
+lenth: 10000 b: 20 num_hash: 10 dis: 5.0 false_positive:  0.600080293976
+accuracy is:  0.536477774007
+
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 90.4309% (2665/2947) (classification)
+SVM using time:  682.103270054
+svm_accuracy= (90.43094672548354, 0.12623006447234475, 0.9593328331770965)
+Start KNN
+Knn accuracy= 0.832711231761
+using time:  668.176304102
+Jaccard accuracy= 0.832032575501
+dice accuracy= 0.832032575501
+hamming accuracy= 0.832711231761
+matching accuracy= 0.832711231761
+kulsinski accuracy= 0.815744825246
+rogerstanimoto accuracy= 0.832711231761
+russellrao accuracy= 0.771292840176
+sokalsneath accuracy= 0.832032575501
+sokalmichener accuracy= 0.832711231761
+lenth: 10000 b: 20 num_hash: 10 dis: 10.0 false_positive:  0.600080293976
+accuracy is:  0.832711231761
+
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 86.7662% (2557/2947) (classification)
+SVM using time:  1663.87059712
+svm_accuracy= (86.76620291822192, 0.20665083135391923, 0.935459687170317)
+Start KNN
+Knn accuracy= 0.33661350526
+using time:  658.997344017
+Jaccard accuracy= 0.335934848999
+dice accuracy= 0.335934848999
+hamming accuracy= 0.33661350526
+matching accuracy= 0.33695283339
+kulsinski accuracy= 0.330505598914
+rogerstanimoto accuracy= 0.33695283339
+russellrao accuracy= 0.332202239566
+sokalsneath accuracy= 0.335934848999
+sokalmichener accuracy= 0.33695283339
+lenth: 10000 b: 20 num_hash: 10 dis: 15.0 false_positive:  0.600080293976
+accuracy is:  0.33695283339
+
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 88.5986% (2611/2947) (classification)
+SVM using time:  641.347689867
+svm_accuracy= (88.59857482185274, 0.16185951815405497, 0.9485301362291086)
+Start KNN
+Knn accuracy= 0.796063793688
+using time:  641.310716867
+Jaccard accuracy= 0.797081778079
+dice accuracy= 0.797081778079
+hamming accuracy= 0.796063793688
+matching accuracy= 0.796063793688
+kulsinski accuracy= 0.792670512385
+rogerstanimoto accuracy= 0.796063793688
+russellrao accuracy= 0.779097387173
+sokalsneath accuracy= 0.797081778079
+sokalmichener accuracy= 0.796063793688
+lenth: 10000 b: 20 num_hash: 10 dis: 20.0 false_positive:  0.600080293976
+accuracy is:  0.796063793688
+

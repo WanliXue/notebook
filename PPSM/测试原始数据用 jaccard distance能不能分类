@@ -1,0 +1,16 @@
+测试原始数据用 jaccard distance能不能分类
+
+先变成string 加上neighbour
+
+1.把所有的数据，每一个加上对应的neighbour，测试一下 jaccard distance knn
+Start KNN
+Knn accuracy= 0.565320665083
+using time:  233.7076931
+Jaccard accuracy= 0.274177129284
+
+process done
+Start KNN
+Knn accuracy= 0.468612147947
+using time:  942.284530163
+Jaccard accuracy= 0.29250084832
+dice accuracy= 0.29250084832

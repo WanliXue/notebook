@@ -1,0 +1,59 @@
+
+不管正负 直接加噪音
+k=1
+
+>> add_noise_to_weight_withAlg
+
+k =
+
+     1
+
+
+err =
+
+    0.0327
+
+
+
+管正负，取绝对值再加噪音
+>> add_noise_to_weight_withAlg
+
+k =
+
+     1
+
+
+err =
+
+    0.0254
+
+
+>> k =1;
+lambda=0.06
+        delta_pu=t_max*delta_r/(n_u*lambda);
+%         noise=add_gamma_noise(1,iteration,delta_pu, epsilon,d);
+            beta=(epsilon*n_u*lambda)/(2*k*t_max*delta_r)
+%             should fill 1/beta
+      noise =lambda* gamrnd (1 ,1/beta,1,d);
+    err =
+
+    0.0540    
+
+
+管正负，取绝对值再加噪音
+k=3
+err =
+
+    0.0331
+
+
+
+k=1,   noise = lambda*gamrnd (1 ,1/beta,1,s);
+err=13.5
+
+
+k=1, noise=noise = gamrnd (1 ,1/beta,1,s);
+err=13.15
+
+—————
+不管eps，就加对应的噪音，直接试attack result

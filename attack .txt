@@ -1,0 +1,6 @@
+send to han for attack
+
+1. send the weight + noise with eps 5 to attack
+stored in ip1_t.npy no change  1000x784
+          ip-2_t.npy with noise 10x1000
+

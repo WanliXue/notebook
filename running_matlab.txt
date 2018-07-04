@@ -1,0 +1,12 @@
+nohup matlab -nodisplay -nojvm -r 'load_npy.m' > log_eps05.out &
+nohup python train.py > acc.out &
+
+
+
+nohup matlab -nodisplay -nojvm -r 'add_noise_to_mnist_weight_withAlg.m'  > /dev/null &
+
+
+nohup matlab -nodisplay -nojvm -r 'add_noise_to_mnist_weight_withAlg_new.m'  > /dev/null &
+
+
+nohup ./myServer > /dev/null &

@@ -1,0 +1,121 @@
+help run experiments on tensorflow
+----------------
+raw explanation can be found: https://github.com/panyx0718/models/tree/master/differential_privacy/dp_sgd
+
+
+下载https://github.com/panyx0718/models 的所有文件存在本地，我的是存在/Users/wanli/Documents/github_code/tensorflow_models/
+
+requirements:
+ 
+1.Tensorflow 0.10.0 (master branch)
+
+
+2.Bazel 0.3.1
+
+https://github.com/bazelbuild/bazel/releases?after=0.3.2
+
+下载对应系统的 Bazel0.3.1的sh文件后，确认完成下载后：
+chmod +x ...sh #增加权限
+./..sh    #运行安装
+
+3.Download MNIST data for tf
+
+需要的是 mnist_test.tfrecord  mnist_train.tfrecord 的格式
+
+如果没有的话， 我是用这个工具下的：
+https://github.com/panyx0718/models/tree/master/slim
+
+clone／download链接里的所有程序，先下载MNIST源数据，然后使用 convert_mmist.sh完成数据的转换, (更改至相关路径)：
+需要开启tensorflow，我好像是pip安装的，所以activate是通过source ~/tensorflow/bin/activate
+
+#!/bin/bash
+source ~/tensorflow/bin/activate
+python download_and_convert_data.py --dataset_name=mnist --dataset_dir="/Users/wanli/Downloads/MNIST/"
+
+至此可以得到文件和相关路径应为以下：
+# List the codes.
+ls -R differential_privacy/
+differential_privacy/:
+dp_sgd  __init__.py  privacy_accountant  README.md
+
+differential_privacy/dp_sgd:
+dp_mnist  dp_optimizer  per_example_gradients  README.md
+
+differential_privacy/dp_sgd/dp_mnist:
+BUILD  dp_mnist.py
+
+differential_privacy/dp_sgd/dp_optimizer:
+BUILD  dp_optimizer.py  dp_pca.py  sanitizer.py  utils.py
+
+differential_privacy/dp_sgd/per_example_gradients:
+BUILD  per_example_gradients.py
+
+differential_privacy/privacy_accountant:
+python  tf
+
+differential_privacy/privacy_accountant/python:
+BUILD  gaussian_moments.py
+
+differential_privacy/privacy_accountant/tf:
+accountant.py  accountant_test.py  BUILD
+
+# List the data.
+ls -R data/
+
+./data:
+mnist_test.tfrecord  mnist_train.tfrecord
+
+使用附件里的dp_mnist.py替换/Users/wanli/Documents/github_code/tensorflow_models/differential_privacy/dp_sgd/dp_mnist/dp_mnist.py,有轻微的改动.
+整个过程测试并正常运行在我的mac上，但是速度有点慢，为了快速，更改了device参数如下注，没有测试过。
+
+注：
+----------------------------
+如果无法用gpu运行，相关语句更改为line268:
+in the tf dp_mnist.py file setting line 268:
+  with tf.Graph().as_default(), tf.Session() as sess, tf.device('/cpu:0'):
+ to
+  with tf.Graph().as_default(), tf.Session() as sess, tf.device('/gpu:0','/gpu:1'):
+
+
+4.build
+
+#Build （需要在tensorflow_models这一层）
+#我的pwd:
+#/Users/wanli/Documents/github_code/tensorflow_models/differential_privacy/dp_sgd/dp_mnist/dp_mnist.py
+#-----------------
+bazel build -c opt differential_privacy/...
+
+
+5.run
+#build完成后不会报错会生成对应的文件，然后运行, 参数格式可能出错，请不要更改
+
+bazel-bin/differential_privacy/dp_sgd/dp_mnist/dp_mnist \
+    --training_data_path=data/mnist_train.tfrecord \
+    --eval_data_path=data/mnist_test.tfrecord \
+    --save_path=tmp/mnist_dir \
+    --num_training_steps=60000 \
+    --accountant_type=Moments \
+    --eps=5.0 \
+    --projection_dimensions=0 
+
+#会开始运行并产生中间结果
+...
+step: 1
+step: 2
+...
+step: 9
+spent privacy: eps 0.1250 delta 0.72709
+spent privacy: eps 0.2500 delta 0.24708
+spent privacy: eps 0.5000 delta 0.0029139
+spent privacy: eps 1.0000 delta 6.494e-10
+spent privacy: eps 2.0000 delta 8.2242e-24
+spent privacy: eps 4.0000 delta 1.319e-51
+spent privacy: eps 8.0000 delta 3.3927e-107
+train_accuracy: 0.53
+eval_accuracy: 0.53
+...
+
+
+#运行完成后会
+ls tmp/mnist_dir/
+checkpoint  ckpt  ckpt.meta  results-0.json

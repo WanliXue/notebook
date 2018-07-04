@@ -1,0 +1,138 @@
+lenth: 10000 b: 10 num_hash: 2 dis: 5.0
+
+l1w_b10_h2_d5
+
+-------MNIST---------
+Knn
+#lenth: 10000 b: 20 num_hash: 2 dis: 5.0 false_positive:  0.39 KNN accuracy:  0.541
+Mnist SVM accuracy=90.1
+#lenth: 10000 b: 16 num_hash: 2 dis: 5.0 false_positive:  0.39 knn_accuracy=0.52 SVM accuracy =88.7,
+#lenth: 10000 b: 14 num_hash: 2 dis: 5.0 false_positive:  0.39  KNNaccuracy=0.542 SVM accuracy=88.6
+#lenth: 10000 b: 12 num_hash: 2 dis: 5.0 false_positive:  0.39 knn_acc=0.539 svm_avv=88.8(mac)
+# lenth: 10000 b: 10 num_hash: 2 dis: 5.0 acc = 0.932
+
+# lenth: 10000 b: 8 num_hash: 2 dis: 5.0 acc = 0.487(nectar 1)
+
+# lenth: 10000 b: 6 num_hash: 2 dis: 5.0 acc =0.442(mac)
+
+lenth: 100000 b: 15 num_hash: 10 dis: 15.0 false_positive:  0.010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.919
+Accuracy = 88.9% (889/1000) (classification)
+Mnist SVM accuracy is  (88.9, 1.7509999999999999, 0.80311148344888372)
+
+Compress
+Compress done
+lenth: 100000 b: 15 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.546
+Accuracy = 87.5% (875/1000) (classification)
+Mnist SVM accuracy is  (87.5, 1.868, 0.7934536491780751)
+
+Compress
+Compress done
+lenth: 100000 b: 15 num_hash: 10 dis: 20.0 false_positive:  0.010185894032
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.151
+Accuracy = 84% (840/1000) (classification)
+Mnist SVM accuracy is  (84.0, 2.601, 0.7199455888417005)
+
+--------face-----
+nohup python  Face_ML.py > ../face_l6w_b5_h5_d20.log & (nect1)
+
+nohup python  Face_ML.py > ../face_l4w_b5_h5_d20.log & (nec2)
+
+nohup python  Face_ML.py > ../face_l2w_b5_h5_d20.log  & (nec3)
+
+
+
+
+
+
+
+lenth: 800000 b: 10 num_hash: 5 dis: 20.0 false_positive:  0.100925190275
+SVM accuracy: 0.147368421053
+KNN accuracy: 0.323684210526
+
+lenth: 800000 b: 5 num_hash: 5 dis: 20.0 false_positive:  0.100925190275
+SVM accuracy is: 0.155263157895
+KNN accuracy is: 0.321052631579
+
+lenth: 800000 b: 2 num_hash: 5 dis: 20.0 false_positive:  0.100925190275
+SVM accuracy is: 0.15
+KNN accuracy is: 0.321052631579
+
+
+lenth: 10000 b: 5 num_hash: 10 dis: 10.0 false_positive:  0.831225244707
+Start SVM Accuracy = 6.57895% 
+knn accuracy is: 0.176315789474
+
+
+lenth: 20000 b: 5 num_hash: 10 dis: 10.0 false_positive:  0.233602440978
+Start SVM Accuracy = 7.63158% (29/380) (classification)
+SVM using time:  176.179703951
+KNN accuracy is: 0.281578947368
+
+lenth: 30000 b: 5 num_hash: 10 dis: 10.0 false_positive:  0.233602440978
+Start SVM Accuracy = 10.5263% 
+SVM using time:  231.24156189
+KNN accuracy is: 0.331578947368
+using time:  25.3592939377
+
+lenth: 40000 b: 5 num_hash: 10 dis: 10.0 false_positive:  0.010185894032
+Start SVM Accuracy = 9.21053% (35/380) (classification)
+SVM using time:  310.454406023
+start KNN accuracy is: 0.323684210526
+using time:  35.9002430439
+
+lenth: 30000 b: 5 num_hash: 8 dis: 10.0 false_positive:  0.025491730766
+Start SVM Accuracy = 10.2632% (39/380) (classification)
+SVM using time:  204.562278986
+knn accuracy is: 0.313157894737
+using time:  24.8277070522
+
+lenth: 30000 b: 5 num_hash: 6 dis: 10.0 false_positive:  0.0637968876764
+Start SVM Accuracy = 8.15789% (30/380) (classification)
+SVM using time:  181.672807217
+start KNN accuracy is: 0.315789473684
+using time:  25.0995709896
+
+lenth: 30000 b: 5 num_hash: 8 dis: 20.0 false_positive:  0.025491730766
+Start SVM Accuracy = 10.2632% (39/380) (classification)
+SVM using time:  203.493866205
+start KNN accuracy is: 0.328947368421
+using time:  25.4007120132
+
+
+lenth: 30000 b: 5 num_hash: 8 dis: 30.0 false_positive:  0.025491730766
+Start SVM Accuracy = 8.15789% (30/380) (classification)
+SVM using time:  225.173224926
+svm_accuracy= (8.157894736842104, 232.5342105263158, -5.24318754241253e-05)
+start KNN accuracy is: 0.334210526316
+using time:  27.1561760902
+
+lenth: 30000 b: 5 num_hash: 8 dis: 50.0 false_positive:  0.025491730766
+Start SVM
+Accuracy = 10% (38/380) (classification)
+SVM using time:  217.729830027
+start KNN accuracy is: 0.305263157895
+using time:  30.6275310516
+
+lenth: 30000 b: 5 num_hash: 8 dis: 5.0 false_positive:  0.025491730766
+Start SVM Accuracy = 10.2632% (39/380) (classification)
+SVM using time:  201.617508173
+start KNN accuracy is: 0.328947368421
+using time:  26.1319849491
+
+lenth: 30000 b: 5 num_hash: 2 dis: 5.0 false_positive:  0.399576400894
+Start SVM Accuracy = 12.1053% (46/380) (classification)
+SVM using time:  90.6115450859
+svm_accuracy= (12.105263157894736, 240.9921052631579, -3.7866346289025925e-06)
+start KNN
+accuracy is: 0.321052631579
+using time:  25.1102440357
+
+

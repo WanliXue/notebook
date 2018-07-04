@@ -1,0 +1,15 @@
+CSE server note
+
+
+ssh login.cse.unsw.edu.au
+
+ssh z5072849@calliope1.cse.unsw.edu.au
+
+vncserver
+
+vncserver -kill :1 -clean
+
+vnc://<machine>.cse.unsw.edu.au:<portnumber>
+
+
+matlab -nodisplay -nojvm -r 'weight_KSVD.m'

@@ -1,0 +1,131 @@
+clone from https://github.com/Lelouche/PPSPM
+
+install the package required, python2.7
+
+SVM
+sudo apt-get install python-libsvm
+
+
+pip install -r requirements.txt
+
+Though bitarray package installed, and can import in other python file but not in NBF and given
+ImportError: No module named bitarray
+
+THE OTHER DAY I TRIED A LOT BUT FAILED, 
+TRIED THROUGH pip, tar .. 
+SUDDENLY THE PACKAGE INSTALLED AND CAN BE USED VIA PYCHARM
+11/2/18
+2:11 PM	Packages installed successfully: Installed packages: 'bitarray'
+
+after compress
+[ 20.68776703   8.92231501 -72.59788507  17.07884109  16.77463536]
+
+calcualte the absolut difference of time series data
+http://www.wangxianfeng.name/2012/09/commonly-used-measures-of-similarity-and-dissimilarity/
+https://docs.scipy.org/doc/scipy/reference/spatial.distance.html
+
+------
+Code implemented but result not good
+pushed to Github
+TO do: check
+
+when b=2, data=64
+set(['62.480', '63.700', '61.250', '60.030', '66.150', '64.920'])
+
+when b=2, data=65
+set(['62.480', '63.700', '61.250', '66.150', '64.930', '67.380'])
+
+1. all float should only keep decimal=2 0.0x
+otherwise make difference like 
+'64.920'])  or '64.930',
+
+
+
+
+2. 64 to 66 or 67 has same difference
+set(['63.960', '66.420', '65.190', '61.500', '60.270', '62.730']) 
+set(['63.960', '68.880', '66.420', '65.190', '67.650', '62.730']) 
+set(['63.960', '68.880', '66.420', '65.190', '67.650', '62.730'])
+bf difference:  0.666666666667
+bf difference:  0.666666666667
+--
+maybe because distance too big
+dis = 0.05 * (max(hb_array) - min(hb_array))
+change to
+0.03 b=3 len=2000
+
+a1= bf_ts.add_neibour(64,0)
+a2= bf_ts.add_neibour(65,0)
+a3= bf_ts.add_neibour(66,0)
+a4= bf_ts.add_neibour(67,0)
+
+
+set(['65.170', '64.190', '63.700', '62.720', '63.210', '65.660', '62.230', '64.680']) 
+set(['65.170', '64.190', '63.700', '66.640', '63.210', '65.660', '66.150', '64.680']) 
+set(['67.620', '65.170', '64.190', '67.130', '66.640', '65.660', '66.150', '64.680']) 
+set(['68.600', '67.620', '65.170', '67.130', '66.640', '65.660', '68.110', '66.150'])
+
+64 65 bf difference:  0.75
+64 66 bf difference:  0.517857142857
+64 66 bf difference:  0.285714285714
+66 67 bf difference:  0.75
+
+
+--------
+
+bf1_input=bf_ts.convert_to_bf_input([64,65,67])
+bf2_input=bf_ts.convert_to_bf_input([64,65,67])
+bf difference:  1.0
+
+bf1_input=bf_ts.convert_to_bf_input([64,65,67])
+bf2_input=bf_ts.convert_to_bf_input([64,65,68])
+bf difference:  0.929663608563
+
+
+bf1_input=bf_ts.convert_to_bf_input([64,65,67])
+bf2_input=bf_ts.convert_to_bf_input([64,65,69])
+bf difference:  0.844036697248
+
+bf1_input=bf_ts.convert_to_bf_input([64,65,67])
+bf2_input=bf_ts.convert_to_bf_input([64,65,65])
+bf difference:  0.83850931677
+
+
+bf1_input=bf_ts.convert_to_bf_input([64,65,67])
+bf2_input=bf_ts.convert_to_bf_input([63,65,68])
+bf difference:  0.844036697248
+
+
+bf1_input=bf_ts.convert_to_bf_input([64,65,67])
+bf2_input=bf_ts.convert_to_bf_input([65,64,67])
+bf difference:  0.830769230769
+
+bf1_input=bf_ts.convert_to_bf_input([64,65,67])
+bf2_input=bf_ts.convert_to_bf_input([65,67,64])
+bf difference:  0.517133956386
+
+
+
+
+———Working so far——
+done:
+run cs + bf on CSI HAR MNIST Face dataset.
+some of them can achieve good result 
+but not all ml algorithms like pixel it is about python’s SVM itself.
+
+
+
+To- do —
+implement SRC algorithm
+using cvxpy from
+http://www.cvxpy.org/en/latest/
+
+!!!cvx not work well
+http://cvxopt.org/examples/mlbook/l1.html
+
+cannot solve the underdertimined problem
+give error L1 norm approximation - Illegal value of ldB
+https://github.com/cvxopt/cvxopt/issues/43
+
+
+

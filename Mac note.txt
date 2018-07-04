@@ -1,0 +1,4 @@
+Mac note
+
+cmd + shift +.  
+show invisible file in file chooser

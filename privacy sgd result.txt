@@ -1,0 +1,37 @@
+测试 tensorflow的privacy sgd
+
+参数
+
+1. Amortized eps 5 iter=700， 效果不好 eps自己增长到了30显示，精确度90%
+sgd_eps5.out
+
+2.
+
+ nohup bazel-bin/differential_privacy/dp_sgd/dp_mnist/dp_mnist \
+    --training_data_path=/mnt/wanli/MNIST/mnist_train.tfrecord \
+    --eval_data_path=/mnt/wanli/MNIST/mnist_test.tfrecord \
+    --save_path=/mnt/wanli/mnist_result \
+    --num_training_steps=5000 \
+    --accountant_type=Amortized \
+    --projection_dimensions=0 \
+    --target_eps=5 \
+    --num_hidden_layers=1 > /mnt/wanli/mnist_result/sgd_eps5_amor.out &
+
+这个结果使得到5000部的时候只有eps 1.多
+
+
+3. 测试用 moment target_eps=5 item 60000 开启 terminate_based_on_privacy=true
+nohup bazel-bin/differential_privacy/dp_sgd/dp_mnist/dp_mnist \
+    --training_data_path=/mnt/wanli/MNIST/mnist_train.tfrecord \
+    --eval_data_path=/mnt/wanli/MNIST/mnist_test.tfrecord \
+    --save_path=/mnt/wanli/mnist_result \
+    --num_training_steps=100 \
+    --accountant_type=Moments \
+    --projection_dimensions=0 \
+    --target_eps=2 \
+    --terminate_based_on_privacy=true \
+    --num_hidden_layers=1 > /mnt/wanli/mnist_result/sgd_eps2_mon.out &
+
+观测 eps始终为2.0
+
+结果无法被restore，重新测试

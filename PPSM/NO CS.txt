@@ -1,0 +1,227 @@
+NO CS
+
+for HAR
+
+
+/Users/wanli/PycharmProjects/BF_imple/venv/bin/python /Users/wanli/PycharmProjects/BF_imple/codes/HAR_ML_nocompress.py
+BF start
+BF filter done
+Start SVM
+Accuracy = 57.9572% (1708/2947) (classification)
+SVM using time:  785.736732006
+svm_accuracy= (57.957244655581945, 0.7332880895826264, 0.7840017364236586)
+Start KNN
+Knn accuracy= 0.462164913471
+using time:  290.069537163
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.99
+accuracy is:  0.462164913471
+
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 18.2219% (537/2947) (classification)
+SVM using time:  4351.56743193
+svm_accuracy= (18.22192059721751, 8.894468951476078, nan)
+Start KNN
+Knn accuracy= 0.16830675263
+using time:  641.063261032
+lenth: 10000 b: 2 num_hash: 71 dis: 0.1 false_positive:  1.0
+accuracy is:  0.16830675263
+
+
+95 0.1
+fp:  0.172714135274
+BF start
+BF filter done
+Start SVM
+Accuracy = 18.2219% (537/2947) (classification)
+SVM using time:  4717.48615193
+svm_accuracy= (18.22192059721751, 8.894468951476078, nan)
+Start KNN
+Knn accuracy= 0.16830675263
+using time:  657.12033987
+lenth: 10000 b: 3 num_hash: 95 dis: 0.1 false_positive:  0.526096197649
+accuracy is:  0.16830675263
+
+
+95 0.1
+fp:  1.0
+BF start
+BF filter done
+Start SVM
+Accuracy = 18.2219% (537/2947) (classification)
+SVM using time:  1836.21811295
+svm_accuracy= (18.22192059721751, 8.894468951476078, nan)
+Start KNN
+Knn accuracy= 0.16830675263
+using time:  324.33491993
+lenth: 10000 b: 3 num_hash: 95 dis: 0.1 false_positive:  0.172714135274
+accuracy is:  0.16830675263
+
+118 0.1
+fp:  0.746129675947
+BF start
+BF filter done
+Start SVM
+Accuracy = 18.2219% (537/2947) (classification)
+SVM using time:  4515.89377093
+svm_accuracy= (18.22192059721751, 8.894468951476078, nan)
+Start KNN
+Knn accuracy= 0.16830675263
+using time:  620.150978088
+lenth: 10000 b: 4 num_hash: 118 dis: 0.1 false_positive:  0.746129675947
+accuracy is:  0.16830675263
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 86.2572% (2542/2947) (classification)
+SVM using time:  425.132920027
+svm_accuracy= (86.25721072276892, 0.1832371903630811, 0.9421986047296874)
+Start KNN
+Knn accuracy= 0.71937563624
+using time:  320.140882969
+lenth: 10000 b: 5 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+accuracy is:  0.71937563624
+
+fp:  0.0545701004311
+BF start
+BF filter done
+Start SVM
+Accuracy = 18.2219% (537/2947) (classification)
+SVM using time:  4340.06031299
+svm_accuracy= (18.22192059721751, 8.90159484221242, 0.0008484156556600599)
+Start KNN
+Knn accuracy= 0.169324737021
+using time:  600.240555048
+lenth: 10000 b: 5 num_hash: 20 dis: 0.1 false_positive:  0.0545701004311
+accuracy is:  0.169324737021
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 18.2219% (537/2947) (classification)
+SVM using time:  4319.77821994
+svm_accuracy= (18.22192059721751, 8.894468951476078, nan)
+Start KNN
+Knn accuracy= 0.16830675263
+using time:  594.231914043
+lenth: 10000 b: 5 num_hash: 20 dis: 20.0 false_positive:  0.0545701004311
+accuracy is:  0.16830675263
+
+
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 94.1975% (2776/2947) (classification)
+SVM using time:  437.810925007
+svm_accuracy= (94.19748897183577, 0.07736681370885647, 0.9751242430937513)
+Start KNN
+Knn accuracy= 0.861893450967
+using time:  265.820463896
+lenth: 10000 b: 5 num_hash: 2 dis: 2.0 false_positive:  0.747645072416
+accuracy is:  0.861893450967
+
+fp:  0.747645072416
+BF start
+BF filter done
+Start SVM
+Accuracy = 90.7363% (2674/2947) (classification)
+SVM using time:  406.350964069
+svm_accuracy= (90.73634204275534, 0.11096029860875467, 0.9647491411311709)
+Start KNN
+Knn accuracy= 0.802171700034
+using time:  317.536426067
+lenth: 10000 b: 5 num_hash: 2 dis: 5.0 false_positive:  0.747645072416
+accuracy is:  0.802171700034
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 88.1914% (2599/2947) (classification)
+SVM using time:  427.810204029
+svm_accuracy= (88.19138106549033, 0.16491347132677298, 0.9475384663400296)
+Start KNN
+Knn accuracy= 0.709195792331
+using time:  314.120927095
+lenth: 10000 b: 5 num_hash: 2 dis: 10.0 false_positive:  0.747645072416
+accuracy is:  0.709195792331
+
+
+
+
+BF start
+BF filter done
+Start SVM
+Accuracy = 92.1615% (2716/2947) (classification)
+SVM using time:  1627.760813
+svm_accuracy= (92.16152019002375, 0.09670851713607058, 0.9689386537447289)
+Start KNN
+Knn accuracy= 0.812351543943
+using time:  6637.71240401
+lenth: 100000 b: 5 num_hash: 2 dis: 5.0 false_positive:  0.399576400894
+accuracy is:  0.812351543943
+
+
+
+fp:  0.911715550327
+BF start
+BF filter done
+Start SVM
+Accuracy = 82.1513% (2421/2947) (classification)
+SVM using time:  924.726234913
+svm_accuracy= (82.1513403461147, 0.26874787919918564, 0.914994170080908)
+Start KNN
+Knn accuracy= 0.599592806244
+using time:  686.612982988
+lenth: 10000 b: 5 num_hash: 5 dis: 10.0 false_positive:  0.100925190275
+accuracy is:  0.599592806244
+
+fp:  0.747645072416
+BF start
+BF filter done
+Start SVM
+Accuracy = 95.6566% (2819/2947) (classification)
+SVM using time:  486.7713449
+svm_accuracy= (95.65659993213437, 0.05768578215134035, 0.9812775222341126)
+Start KNN
+Knn accuracy= 0.889379029522
+using time:  237.768597126
+lenth: 10000 b: 5 num_hash: 2 dis: 1.0 false_positive:  0.747645072416
+accuracy is:  0.889379029522
+
+
+lenth: 100000 b: 5 num_hash: 2 dis: 10.0 false_positive:fp:  0.399576400894    nec2
+
+lenth: 100000 b: 5 num_hash: 4 dis: 5.0 false_positive:fp:  0.159661300151    nec3
+
+fp:  0.159661300151
+BF start
+BF filter done
+Start SVM
+Accuracy = 91.8561% (2707/2947) (classification)
+SVM using time:  2437.39600801
+svm_accuracy= (91.85612487275195, 0.10281642348150662, 0.966972985710557)
+Start KNN
+Knn accuracy= 0.810654903291
+using time:  6455.21033692
+lenth: 100000 b: 5 num_hash: 4 dis: 5.0 false_positive:  0.159661300151
+accuracy is:  0.810654903291
+
+
+fp:  0.399576400894
+BF start
+BF filter done
+Start SVM
+Accuracy = 90.8381% (2677/2947) (classification)
+SVM using time:  1829.87457681
+svm_accuracy= (90.83814048184594, 0.11605022056328469, 0.9626216231093565)
+Start KNN
+Knn accuracy= 0.756362402443
+using time:  6783.44716811
+lenth: 100000 b: 5 num_hash: 2 dis: 10.0 false_positive:  0.399576400894
+accuracy is:  0.756362402443
+
+

@@ -1,0 +1,72 @@
+
+after bf filter, testing on other distance of knn
+
+
+HAR
+-------------
+Compress
+Compress done
+BF start
+BF filter done
+Start SVM
+Accuracy = 90.5327% (2668/2947) (classification)
+SVM using time:  494.045152903
+svm_accuracy= (90.53274516457414, 0.13030200203596878, 0.9577091119222262)
+Start KNN
+Knn accuracy= 0.8432304038
+using time:  331.407479048
+Jaccard accuracy= 0.844248388191
+dice accuracy= 0.844248388191
+hamming accuracy= 0.8432304038
+matching accuracy= 0.844248388191
+kulsinski accuracy= 0.851374278928
+rogerstanimoto accuracy= 0.844248388191
+russellrao accuracy= 0.851374278928
+sokalsneath accuracy= 0.844248388191
+sokalmichener accuracy= 0.844248388191
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+accuracy is:  0.844248388191
+
+-------MNIST-----
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 2 dis: 5.0 false_positive:  0.399576400894
+BF filter
+BF filter done
+Mnist KNN accuracy:  0.932
+Jaccard accuracy= 0.933
+dice accuracy= 0.933
+hamming accuracy= 0.932
+matching accuracy= 0.931
+kulsinski accuracy= 0.934
+rogerstanimoto accuracy= 0.931
+russellrao accuracy= 0.935
+sokalsneath accuracy= 0.933
+Jaccard accuracy= 0.931
+Accuracy = 90.1% (901/1000) (classification)
+Mnist SVM accuracy is  (90.1, 1.545, 0.8252749507170655)
+
+-------CSI---------
+Accuracy = 90% (45/50) (classification)
+SVM accuracy is  (90.0, array([1.36]), array([5398.07032575]))
+knn acuracy is  0.92
+lenth: 10000 b: 10 num_hash: 6 dis: 20.0 false_positive:  0.41791352443
+BF filter
+BF filter done
+start KK train
+KNN using time:  0.0182688236237
+knn_accuracy= 0.9
+Jaccard accuracy= 0.9
+dice accuracy= 0.9
+hamming accuracy= 0.9
+matching accuracy= 0.9
+kulsinski accuracy= 0.9
+rogerstanimoto accuracy= 0.9
+russellrao accuracy= 0.88
+sokalsneath accuracy= 0.9
+sokalmichener accuracy= 0.9
+svm(sklearn) acc= 0.0
+Accuracy = 84% (42/50) (classification)
+SVM using time:  3.68341612816
+svm_accuracy= (84.0, array([1.3]), array([5235.76725878]))
+

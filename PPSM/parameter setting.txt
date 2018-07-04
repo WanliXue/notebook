@@ -1,0 +1,52 @@
+false positive: 0.0~0.3    0.3~0.5   0.5~1
+
+acc					80		60			20
+-----CSI-----
+# f= (1 -e^(-num_hash * [(2*b+2)*com_to_len] /length))^num_hash
+length affect the fp and accuracy most!!!
+根据经验发现length影响 fp 和accuracy最明显
+
+com_to_len=80
+
+(2*b+2)=22
+
+22*80=1760 => l10k
+
+
+
+length = 10000 最高
+# lenth: 10000 b: 10 num_hash: 6 dis: 20.0 false_positive: 0.41 knn_accuracy= 0.9 svm_accuracy=84
+
+fine tune:
+那么然后呢，num_hash会有影响么
+
+选择 mid level privacy 
+# lenth: 10000 b: 10 num_hash: 6 dis: 20.0 false_positive: 0.41 knn_accuracy= 0.9 svm_accuracy=84
+
+减少num_hash 导致fp低了（不安全），精确度也降低了
+lenth: 10000 b: 10 num_hash: 4 dis: 20.0 false_positive:0.15 knn_accuracy=0.84 svm_accuracy= 80.0
+
+如果增加hash呢，fp还是降低了，精确度也是
+lenth: 10000 b: 10 num_hash: 8 dis: 20.0 false_positive:  0.31 knn_accuracy= 0.88 svm_accuracy= 82.0
+
+
+
+
+
+
+---------about SRC----
+the original SRC cannot work on the BF data, tried another solution
+https://github.com/nikcleju/pyCSalgos/blob/master/tests/l1eq_test.py
+
+tested the l1 also not work on bf data but work on compressed data,
+so MAYBE it just not work
+
+
+
+---------------about install lib---
+pip install requirements.txt
+failed 
+then 
+sudo pip install one-by-one
+
+pip install -r requirements.txt

@@ -1,0 +1,66 @@
+How to use Screen
+-----------
+https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/#starting
+which screen
+
+screen
+
+ctrl a + c create new one
+ctrl a + n/p next or previous
+ctrl a + d detached (not killed will ever lasting)
+screen -r   re-attached
+screen -ls
+
+ctrl a + k  kill
+
+name    :
+
+
+screen -S SESSIONNAME is good for starting a session with a name, but if you start a session and later decide to name it, enter command mode (C-a :) and then enter the command sessionname SESSIONNAME.
+
+
+
+pkill screen : kill all
+
+---------
+                       Screen key bindings, page 1 of 2.
+
+                       Command key:  ^A   Literal ^A:  a
+
+  break       ^B b         license     ,            removebuf   =         
+  clear       C            lockscreen  ^X x         reset       Z         
+  colon       :            log         H            screen      ^C c      
+  copy        ^[ [         login       L            select      '         
+  detach      ^D d         meta        a            silence     _         
+  digraph     ^V           monitor     M            split       S         
+  displays    *            next        ^@ ^N sp n   suspend     ^Z z      
+  dumptermcap .            number      N            time        ^T t      
+  fit         F            only        Q            title       A         
+  flow        ^F f         other       ^A           vbell       ^G        
+  focus       ^I           pow_break   B            version     v         
+  hardcopy    h            pow_detach  D            width       W         
+  help        ?            prev        ^H ^P p ^?   windows     ^W w      
+  history     { }          quit        \            wrap        ^R r      
+  info        i            readbuf     <            writebuf    >         
+  kill        K k          redisplay   ^L l         xoff        ^S s      
+  lastmsg     ^M m         remove      X            xon         ^Q q      
+
+
+^]   paste .
+"    windowlist -b
+-    select -
+0    select 0
+1    select 1
+2    select 2
+3    select 3
+4    select 4
+5    select 5
+6    select 6
+7    select 7
+8    select 8
+9    select 9
+I    login on
+O    login off
+]    paste .
+|    split -v
+:kB: focus prev

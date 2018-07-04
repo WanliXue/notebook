@@ -1,0 +1,25 @@
+attack result
+
+原始精确度
+Test net output #0: accuracy = 0.9658
+#Test net output #0: accuracy = 0.9607
+
+
+原始weight加 eps =5的噪音，精确度到 error=0.1755
+I0725 20:58:48.742980  6007 caffe.cpp:318] Loss: 0.430706
+I0725 20:58:48.742991  6007 caffe.cpp:330] accuracy = 0.854
+I0725 20:58:48.743017  6007 caffe.cpp:330] loss = 0.430706 (* 1 = 0.430706 loss)
+
+生成weight为ip1_t.npy, ip-2_t.npy， attack结果为不可看。
+
+
+
+
+
+
+!!!!
+————————————
+在attack的程序中需要保存这段，不然是从0.1 0.1 0.1 开始
+for _ in range(1000):
+    batch_xs, batch_ys = mnist.train.next_batch(100)
+    [tmp_train,tmp_w1,tmp_w2] = sess.run([train_step,w1,w2], feed_dict={x: batch_xs, y_: batch_ys})#这里的tmp_w1,tmp_w2是训练好的weight

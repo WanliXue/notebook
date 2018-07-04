@@ -1,0 +1,43 @@
+ip explanation
+
+先乘ip0_5 再乘ip1_1
+
+ip 0_5  9x1024
+ip 1_1  10x9
+
+没加噪音只是计算分开
+
+ip 0_5 9x1024
+ip 1_3  10x9
+用了算法的噪音 第一次尝试
+最高才0.5精确度
+
+
+ip0_5eps_2 9x1024
+ip1_3eps_2 10x9
+往分开的K=9上用算法加噪音
+lambda=0.06 k=1 eps=2
+
+---------------
+sensity=max(max(raw_weight)) - min(min(raw_weight));
+
+epsilon=2;
+单独在 10x1024上加噪音看
+ip1_-1.npy  
+
+
+Jun 26: 开始尝试有了整个noise weight之后再分开，初步试验KSVD的范围和影响
+
+ip1_-1: 是10x1024 加了噪音
+
+ip0_-5: Kx1024  
+ip1_-2: 10xK   （他们二者是 ip1_-1 的ksvd的结果）
+
+
+
+ip0_-5: Kx1024
+ip1_-3: 10xK (是 ip1_-1 的svd的结果)
+
+ip1_00: 10x1024 用算法10次迭代之后的 weight
+
+ip0_
