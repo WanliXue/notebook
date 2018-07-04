@@ -1,0 +1,5 @@
+school printer
+
+if afte all tried on the tagi page still cannot connect to printer.
+
+Try make wifi dns to default instead of 8.8.8.8
