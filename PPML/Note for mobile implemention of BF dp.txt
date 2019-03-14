@@ -1,0 +1,28 @@
+Not for mobile implemention of BF dp
+
+
+Classification:
+weka3.6.10 plus LibSVM-1.0.10 work better
+will provide KNN and SVM togehter
+reasons are from http://weka.8497.n7.nabble.com/Weka-java-API-and-LibSVM-td30443.html
+checked weka 3.7 and something, always cannot use some classification function or utility functions.
+
+
+Bloom filter:
+use https://github.com/WanliXue/Java-BloomFilter for bloom filter
+others are too complicated
+
+
+A solution to test on mobile phone is pre-process all data in matlab and saved in arff format.
+The reason for that is , it is hard to integrate using the compression, bloom filter, adding noise and classification in one pipeline.
+I suggest process data in matlab and load arff(for weka library format) to test the classification consumption.
+
+For the bloom filter , compression and adding noise consumption, we can implement the function with same data size but don't have to convert the data finally into the input format of the classifiers, which make it simple.
+
+Concern: for normal data BF + noise + classification
+without compression, the data length comes to 100,000 (will be 10,000 with compression),and for the har dataset, the training will be 7352x100,000 and testing 2947x100,000, which make use out the Android memory.
+
+
+
+matlab deal with bloom filter as uint8 but weka . arff deal as double
+

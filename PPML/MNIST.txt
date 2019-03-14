@@ -1,9 +1,9 @@
 MNIST
 
 -------------------
-fp =0.001
+fp =0.01
 
-lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.0010185894032
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
 BF filter
 BF filter done
 Mnist KNN accuracy:  0.911
@@ -13,7 +13,7 @@ hamming accuracy= 0.911
 Accuracy = 89.4% (894/1000) (classification)
 Mnist SVM accuracy is  (89.4, 1.639, 0.8153462101705476)
 
-lenth: 10000 b: 5 num_hash: 10 dis: 10.0 false_positive:  0.0010185894032
+lenth: 10000 b: 5 num_hash: 10 dis: 10.0 false_positive:  0.010185894032
 BF filter
 BF filter done
 Mnist KNN accuracy:  0.854
@@ -23,7 +23,7 @@ hamming accuracy= 0.854
 Accuracy = 87.4% (874/1000) (classification)
 Mnist SVM accuracy is  (87.4, 2.0550000000000002, 0.77014949133104038)
 
-lenth: 10000 b: 5 num_hash: 10 dis: 15.0 false_positive:  0.0010185894032
+lenth: 10000 b: 5 num_hash: 10 dis: 15.0 false_positive:  0.010185894032
 BF filter
 BF filter done
 Mnist KNN accuracy:  0.727
@@ -33,7 +33,7 @@ hamming accuracy= 0.727
 Accuracy = 84% (840/1000) (classification)
 Mnist SVM accuracy is  (84.0, 2.786, 0.6944722206793511)
 
-lenth: 10000 b: 5 num_hash: 10 dis: 20.0 false_positive:  0.0010185894032
+lenth: 10000 b: 5 num_hash: 10 dis: 20.0 false_positive:  0.010185894032
 BF filter
 BF filter done
 Mnist KNN accuracy:  0.606
@@ -85,7 +85,7 @@ Mnist SVM accuracy is  (60.1, 6.85, 0.3456726322125382)
 
 
 ----------------
-fp=0.02
+fp=0.1
 
 lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
 BF filter
@@ -129,7 +129,7 @@ Mnist SVM accuracy is  (87.0, 2.068, 0.7690590012860873)
 
 
 ----------------
-fp=0.04
+fp=0.23
 
 lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
 BF filter

@@ -1,0 +1,1895 @@
+HAR with DP
+
+nohup python HAR_ML_withDP.py >HAR_fp0_1_p###.log &
+
+
+fp=0.01 p=0.1 0.2 0.3 0.4
+-------------------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_01_p
+
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 512
+how many 1 raw data: 4553
+how many 1 after noise: 4605
+Start SVM
+Accuracy = 90.7024% (2673/2947) (classification)
+SVM using time:  1476.7318778
+svm_accuracy= (90.70240922972515, 0.14285714285714285, 0.954699126749993)
+Start KNN
+Knn accuracy= 0.813708856464
+using time:  893.797884941
+Jaccard accuracy= 0.814726840855
+dice accuracy= 0.814726840855
+hamming accuracy= 0.813708856464
+
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 991
+how many 1 raw data: 4553
+how many 1 after noise: 4656
+Start SVM
+Accuracy = 90.2952% (2661/2947) (classification)
+SVM using time:  2190.54208994
+svm_accuracy= (90.29521547336275, 0.15914489311163896, 0.9504648400507522)
+Start KNN
+Knn accuracy= 0.797081778079
+using time:  771.773144007
+Jaccard accuracy= 0.795045809298
+dice accuracy= 0.795045809298
+hamming accuracy= 0.797081778079
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1463
+how many 1 raw data: 4553
+how many 1 after noise: 4740
+Start SVM
+Accuracy = 87.377% (2575/2947) (classification)
+SVM using time:  3370.37861204
+svm_accuracy= (87.37699355276553, 0.20359687818120123, 0.9392770395357956)
+Start KNN
+Knn accuracy= 0.791652527995
+using time:  735.511815071
+Jaccard accuracy= 0.794027824907
+dice accuracy= 0.794027824907
+hamming accuracy= 0.791652527995
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 2004
+how many 1 raw data: 4553
+how many 1 after noise: 4735
+Start SVM
+Accuracy = 87.4109% (2576/2947) (classification)
+SVM using time:  4068.093683
+svm_accuracy= (87.41092636579573, 0.21343739395995928, 0.9367666323092197)
+Start KNN
+Knn accuracy= 0.746182558534
+using time:  712.330193996
+Jaccard accuracy= 0.760434340007
+dice accuracy= 0.760434340007
+hamming accuracy= 0.746182558534
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2480
+how many 1 raw data: 4553
+how many 1 after noise: 4753
+Start SVM
+Accuracy = 83.339% (2456/2947) (classification)
+SVM using time:  5278.74398994
+svm_accuracy= (83.3389888021717, 0.2745164574143196, 0.92129243969792)
+Start KNN
+Knn accuracy= 0.763148965049
+using time:  869.407416105
+Jaccard accuracy= 0.750933152358
+dice accuracy= 0.750933152358
+hamming accuracy= 0.763148965049
+
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 2995
+how many 1 raw data: 4553
+how many 1 after noise: 4860
+Start SVM
+Accuracy = 85.0017% (2505/2947) (classification)
+SVM using time:  6168.71298289
+svm_accuracy= (85.00169664065152, 0.2813030200203597, 0.9207708990619486)
+Start KNN
+Knn accuracy= 0.658635900916
+using time:  735.90311408
+Jaccard accuracy= 0.621309806583
+dice accuracy= 0.621309806583
+hamming accuracy= 0.658635900916
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3536
+how many 1 raw data: 4553
+how many 1 after noise: 4841
+ HAR Start SVM
+Accuracy = 85.6125% (2522/2947) (classification)
+SVM using time:  7380.03133416
+svm_accuracy= (85.61248727519511, 0.28944689514760774, 0.9158535532967819)
+Start KNN
+Knn accuracy= 0.575839837122
+using time:  754.228092194
+Jaccard accuracy= 0.547675602307
+dice accuracy= 0.547675602307
+hamming accuracy= 0.575839837122
+
+lenth: 10000 b: 5 num_hash: 10 dis: 5.0 false_positive:  0.010185894032
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 4046
+how many 1 raw data: 4553
+how many 1 after noise: 4867
+ HAR Start SVM
+Accuracy = 81.0316% (2388/2947) (classification)
+SVM using time:  7240.45510602
+svm_accuracy= (81.03155751611808, 0.37393959959280626, 0.897103509161631)
+Start KNN
+Knn accuracy= 0.440108585002
+using time:  686.680977106
+Jaccard accuracy= 0.313878520529
+dice accuracy= 0.313878520529
+hamming accuracy= 0.440108585002
+
+
+fp=0.1 p=0.1 0.2 0.3 0.4
+-------------------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_1_p
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 479
+how many 1 raw data: 4250
+how many 1 after noise: 4347
+Start SVM
+Accuracy = 90.8381% (2677/2947) (classification)
+SVM using time:  1367.13111186
+svm_accuracy= (90.83814048184594, 0.13844587716321682, 0.9564625564974292)
+Start KNN
+Knn accuracy= 0.821513403461
+using time:  833.222512007
+Jaccard accuracy= 0.826603325416
+dice accuracy= 0.826603325416
+hamming accuracy= 0.821513403461
+
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 1006
+how many 1 raw data: 4250
+how many 1 after noise: 4368
+Start SVM
+Accuracy = 90.2952% (2661/2947) (classification)
+SVM using time:  1889.01364207
+svm_accuracy= (90.29521547336275, 0.14794706481167288, 0.954233568775506)
+Start KNN
+Knn accuracy= 0.816762809637
+using time:  704.571033001
+Jaccard accuracy= 0.813369528334
+dice accuracy= 0.813369528334
+hamming accuracy= 0.816762809637
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1524
+how many 1 raw data: 4250
+how many 1 after noise: 4454
+Start SVM
+Accuracy = 88.0896% (2596/2947) (classification)
+SVM using time:  3153.5056951
+svm_accuracy= (88.08958262639973, 0.18221920597217509, 0.9453981269442708)
+Start KNN
+Knn accuracy= 0.830335934849
+using time:  797.12341094
+Jaccard accuracy= 0.825924669155
+dice accuracy= 0.825924669155
+hamming accuracy= 0.830335934849
+
+lenth: 10000 b: 10 num_hash: 5 dis: 10.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+Start SVM
+Accuracy = 89.2094% (2629/2947) (classification)
+SVM using time:  2078.64428401
+svm_accuracy= (89.20936545639634, 0.1832371903630811, 0.9436885248449393)
+Start KNN
+Knn accuracy= 0.783508652867
+using time:  623.929648876
+Jaccard accuracy= 0.783847980998
+dice accuracy= 0.783847980998
+hamming accuracy= 0.783508652867
+
+lenth: 10000 b: 10 num_hash: 5 dis: 15.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 995
+how many 1 raw data: 4202
+how many 1 after noise: 4289
+Start SVM
+Accuracy = 87.0716% (2566/2947) (classification)
+SVM using time:  2531.85707903
+svm_accuracy= (87.07159823549372, 0.22395656599932134, 0.9340179238669315)
+Start KNN
+Knn accuracy= 0.682049541907
+using time:  700.613195896
+Jaccard accuracy= 0.689175432643
+dice accuracy= 0.689175432643
+hamming accuracy= 0.682049541907
+
+
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 1931
+how many 1 raw data: 4250
+how many 1 after noise: 4551
+Start SVM
+Accuracy = 89.379% (2634/2947) (classification)
+SVM using time:  4249.88805604
+svm_accuracy= (89.37902952154734, 0.1856124872751951, 0.944565544567034)
+Start KNN
+Knn accuracy= 0.801153715643
+using time:  796.448843002
+Jaccard accuracy= 0.798439090601
+dice accuracy= 0.798439090601
+hamming accuracy= 0.801153715643
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2464
+how many 1 raw data: 4250
+how many 1 after noise: 4614
+Start SVM
+Accuracy = 87.0037% (2564/2947) (classification)
+SVM using time:  5105.21061206
+svm_accuracy= (87.00373260943333, 0.2141160502205633, 0.9362537803293345)
+Start KNN
+Knn accuracy= 0.769596199525
+using time:  720.949797869
+Jaccard accuracy= 0.766202918222
+dice accuracy= 0.766202918222
+hamming accuracy= 0.769596199525
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 5 dis: 10.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+Start SVM
+Accuracy = 88.6325% (2612/2947) (classification)
+SVM using time:  4560.95826602
+svm_accuracy= (88.63250763488293, 0.2042755344418052, 0.9383298621084603)
+Start KNN
+Knn accuracy= 0.659314557177
+using time:  709.081623077
+Jaccard accuracy= 0.673227010519
+dice accuracy= 0.673227010519
+hamming accuracy= 0.659314557177
+
+lenth: 10000 b: 10 num_hash: 5 dis: 15.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 1912
+how many 1 raw data: 4202
+how many 1 after noise: 4494
+Start SVM
+Accuracy = 87.0377% (2565/2947) (classification)
+SVM using time:  5021.75895286
+svm_accuracy= (87.03766542246352, 0.2354937224295894, 0.9303500953277716)
+Start KNN
+Knn accuracy= 0.530030539532
+using time:  738.910207987
+Jaccard accuracy= 0.495419070241
+dice accuracy= 0.495419070241
+hamming accuracy= 0.530030539532
+
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 3006
+how many 1 raw data: 4250
+how many 1 after noise: 4688
+Start SVM
+Accuracy = 85.4089% (2516/2947) (classification)
+SVM using time:  6223.55112386
+svm_accuracy= (85.4088903970139, 0.27621309806582967, 0.922198969762253)
+Start KNN
+Knn accuracy= 0.657278588395
+using time:  704.430916071
+Jaccard accuracy= 0.596878181201
+dice accuracy= 0.596878181201
+hamming accuracy= 0.657278588395
+
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 5 dis: 10.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+Start SVM
+Accuracy = 86.4947% (2549/2947) (classification)
+SVM using time:  6421.46000409
+svm_accuracy= (86.49474041398032, 0.2745164574143196, 0.9229032423312168)
+Start KNN
+Knn accuracy= 0.58432304038
+using time:  812.969226122
+Jaccard accuracy= 0.593824228029
+dice accuracy= 0.593824228029
+hamming accuracy= 0.58432304038
+
+
+lenth: 10000 b: 10 num_hash: 5 dis: 15.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 3013
+how many 1 raw data: 4202
+how many 1 after noise: 4705
+Start SVM
+Accuracy = 80.5226% (2373/2947) (classification)
+SVM using time:  6565.66420984
+svm_accuracy= (80.52256532066508, 0.35934848998982016, 0.9040334302118226)
+Start KNN
+Knn accuracy= 0.37122497455
+using time:  738.021480083
+Jaccard accuracy= 0.329148286393
+dice accuracy= 0.329148286393
+hamming accuracy= 0.37122497455
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3531
+how many 1 raw data: 4250
+how many 1 after noise: 4701
+ HAR Start SVM
+Accuracy = 84.4588% (2489/2947) (classification)
+SVM using time:  7261.33657789
+svm_accuracy= (84.45877163216831, 0.29351883271123175, 0.9156832732643122)
+Start KNN
+Knn accuracy= 0.599253478113
+using time:  767.76542592
+Jaccard accuracy= 0.615880556498
+dice accuracy= 0.615880556498
+hamming accuracy= 0.599253478113
+
+
+lenth: 10000 b: 10 num_hash: 5 dis: 5.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 4004
+how many 1 raw data: 4250
+how many 1 after noise: 4820
+Start SVM
+Accuracy = 84.4927% (2490/2947) (classification)
+SVM using time:  7027.65785003
+svm_accuracy= (84.49270444519851, 0.32066508313539194, 0.905097474230193)
+Start KNN
+Knn accuracy= 0.633186291144
+using time:  702.1033988
+Jaccard accuracy= 0.577536477774
+dice accuracy= 0.577536477774
+hamming accuracy= 0.633186291144
+
+Compress
+Compress done
+lenth: 10000 b: 10 num_hash: 5 dis: 10.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+Start SVM
+Accuracy = 85.8161% (2528/2947) (classification)
+SVM using time:  7256.52500796
+svm_accuracy= (85.81608415337631, 0.2701051917203936, 0.9194766753444477)
+Start KNN
+Knn accuracy= 0.387173396675
+using time:  728.03757906
+Jaccard accuracy= 0.452663725823
+dice accuracy= 0.452663725823
+hamming accuracy= 0.387173396675
+
+lenth: 10000 b: 10 num_hash: 5 dis: 15.0 false_positive:  0.100925190275
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 4073
+how many 1 raw data: 4193
+how many 1 after noise: 4816
+Start SVM
+Accuracy = 77.1971% (2275/2947) (classification)
+SVM using time:  7137.602736
+svm_accuracy= (77.19714964370546, 0.4231421784865965, 0.9012767985227979)
+Start KNN
+Knn accuracy= 0.198846284357
+using time:  621.341863871
+Jaccard accuracy= 0.231421784866
+dice accuracy= 0.231421784866
+hamming accuracy= 0.198846284357
+
+
+fp=0.23 p=0.1 0.2 0.3 0.4  run
+-----------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_2_p
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 505
+how many 1 raw data: 6668
+how many 1 after noise: 6503
+Start SVM
+Accuracy = 91.4489% (2695/2947) (classification)
+SVM using time:  1589.63797593
+svm_accuracy= (91.44893111638955, 0.12623006447234475, 0.9592882650061644)
+Start KNN
+Knn accuracy= 0.832371903631
+using time:  760.843074083
+Jaccard accuracy= 0.835086528673
+dice accuracy= 0.835086528673
+hamming accuracy= 0.832371903631
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 1015
+how many 1 raw data: 6668
+how many 1 after noise: 6353
+Start SVM
+Accuracy = 91.1096% (2685/2947) (classification)
+SVM using time:  2637.1292429
+svm_accuracy= (91.10960298608755, 0.1377672209026128, 0.9566693895211451)
+Start KNN
+Knn accuracy= 0.826603325416
+using time:  859.325991154
+Jaccard accuracy= 0.821852731591
+dice accuracy= 0.821852731591
+hamming accuracy= 0.826603325416
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1459
+how many 1 raw data: 6668
+how many 1 after noise: 6193
+Start SVM
+Accuracy = 90.1595% (2657/2947) (classification)
+SVM using time:  3601.21261597
+svm_accuracy= (90.15948422124194, 0.1533763148965049, 0.9524608501444582)
+Start KNN
+Knn accuracy= 0.807940278249
+using time:  785.688025951
+Jaccard accuracy= 0.805225653207
+dice accuracy= 0.805225653207
+hamming accuracy= 0.807940278249
+
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 2040
+how many 1 raw data: 6668
+how many 1 after noise: 5940
+Start SVM
+Accuracy = 87.1395% (2568/2947) (classification)
+SVM using time:  4664.28442812
+svm_accuracy= (87.13946386155412, 0.1866304716661011, 0.9438955456047932)
+Start KNN
+Knn accuracy= 0.776043434001
+using time:  787.847410202
+Jaccard accuracy= 0.767560230743
+dice accuracy= 0.767560230743
+hamming accuracy= 0.776043434001
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2497
+how many 1 raw data: 6668
+how many 1 after noise: 5837
+Start SVM
+Accuracy = 88.5307% (2608/2947) (classification)
+SVM using time:  5785.89617395
+svm_accuracy= (88.53070919579233, 0.1849338310145911, 0.9432386639081931)
+Start KNN
+Knn accuracy= 0.746861214795
+using time:  781.708050013
+Jaccard accuracy= 0.737360027146
+dice accuracy= 0.737360027146
+hamming accuracy= 0.746861214795
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 2991
+how many 1 raw data: 6668
+how many 1 after noise: 5691
+Start SVM
+Accuracy = 86.2911% (2543/2947) (classification)
+SVM using time:  7303.94512296
+svm_accuracy= (86.29114353579912, 0.22463522225992535, 0.93288875507173)
+Start KNN
+Knn accuracy= 0.676959619952
+using time:  763.209554911
+Jaccard accuracy= 0.672887682389
+dice accuracy= 0.672887682389
+hamming accuracy= 0.676959619952
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3542
+how many 1 raw data: 6668
+how many 1 after noise: 5436
+ HAR Start SVM
+Accuracy = 85.0356% (2506/2947) (classification)
+SVM using time:  7790.38947606
+svm_accuracy= (85.03562945368171, 0.27078384798099764, 0.9215952869242086)
+Start KNN
+Knn accuracy= 0.648456057007
+using time:  777.66501689
+Jaccard accuracy= 0.607397353241
+dice accuracy= 0.607397353241
+hamming accuracy= 0.648456057007
+
+lenth: 10000 b: 10 num_hash: 10 dis: 5.0 false_positive:  0.233602440978
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 3968
+how many 1 raw data: 6668
+how many 1 after noise: 5306
+Start SVM
+Accuracy = 82.1853% (2422/2947) (classification)
+SVM using time:  8357.88510203
+svm_accuracy= (82.1852731591449, 0.32066508313539194, 0.9096801858992273)
+Start KNN
+Knn accuracy= 0.504580929759
+using time:  720.907155991
+Jaccard accuracy= 0.464540210383
+dice accuracy= 0.464540210383
+hamming accuracy= 0.504580929759
+
+fp=0.35 d=5 p=0.1 0.2 0.3 0.4  run  f=20
+-----------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_35_p
+
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 535
+how many 1 raw data: 8863
+how many 1 after noise: 8438
+Start SVM
+Accuracy = 91.6865% (2702/2947) (classification)
+SVM using time:  2307.32234406
+svm_accuracy= (91.68646080760095, 0.12080081438751272, 0.9618988089215724)
+Start KNN
+Knn accuracy= 0.813708856464
+using time:  791.164981127
+Jaccard accuracy= 0.812351543943
+dice accuracy= 0.812351543943
+hamming accuracy= 0.813708856464
+
+enth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 978
+how many 1 raw data: 8863
+how many 1 after noise: 8105
+Start SVM
+Accuracy = 92.1955% (2717/2947) (classification)
+SVM using time:  3456.14780188
+svm_accuracy= (92.19545300305396, 0.12283678316932474, 0.9607296037785744)
+Start KNN
+Knn accuracy= 0.802171700034
+using time:  790.765427113
+Jaccard accuracy= 0.79809976247
+dice accuracy= 0.79809976247
+hamming accuracy= 0.802171700034
+
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1517
+how many 1 raw data: 8863
+how many 1 after noise: 7718
+Start SVM
+Accuracy = 90.4649% (2666/2947) (classification)
+SVM using time:  4446.12907791
+svm_accuracy= (90.46487953851374, 0.14116050220563284, 0.9555007268085134)
+Start KNN
+Knn accuracy= 0.760434340007
+using time:  740.542676926
+Jaccard accuracy= 0.74143196471
+dice accuracy= 0.74143196471
+hamming accuracy= 0.760434340007
+
+
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 1979
+how many 1 raw data: 8863
+how many 1 after noise: 7342
+Start SVM
+Accuracy = 89.3112% (2632/2947) (classification)
+SVM using time:  5814.37922502
+svm_accuracy= (89.31116389548694, 0.168985408890397, 0.9480498081722755)
+Start KNN
+Knn accuracy= 0.727858839498
+using time:  868.865962982
+Jaccard accuracy= 0.718357651849
+dice accuracy= 0.718357651849
+hamming accuracy= 0.727858839498
+
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2542
+how many 1 raw data: 8863
+how many 1 after noise: 6923
+Start SVM
+Accuracy = 83.4069% (2457/2947) (classification)
+SVM using time:  7825.58344293
+svm_accuracy= (83.4068544282321, 0.2880895826263997, 0.9218912757995242)
+Start KNN
+Knn accuracy= 0.691550729555
+using time:  831.085780859
+Jaccard accuracy= 0.655921275874
+dice accuracy= 0.655921275874
+hamming accuracy= 0.691550729555
+
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 2976
+how many 1 raw data: 8863
+how many 1 after noise: 6599
+Start SVM
+Accuracy = 83.0336% (2447/2947) (classification)
+SVM using time:  8600.85362887
+svm_accuracy= (83.0335934848999, 0.31014591109602985, 0.9159868509520828)
+Start KNN
+Knn accuracy= 0.658975229046
+using time:  695.17128396
+Jaccard accuracy= 0.62911435358
+dice accuracy= 0.62911435358
+hamming accuracy= 0.658975229046
+
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3498
+how many 1 raw data: 8863
+how many 1 after noise: 6115
+ HAR Start SVM
+Accuracy = 80.285% (2366/2947) (classification)
+SVM using time:  8866.2162149
+svm_accuracy= (80.28503562945369, 0.4139803189684425, 0.8958091177234401)
+Start KNN
+Knn accuracy= 0.56124872752
+using time:  791.389954805
+Jaccard accuracy= 0.538513742789
+dice accuracy= 0.538513742789
+hamming accuracy= 0.56124872752
+
+lenth: 10000 b: 10 num_hash: 20 dis: 5.0 false_positive:  0.360096359218
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 4037
+how many 1 raw data: 8863
+how many 1 after noise: 5774
+Start SVM
+Accuracy = 78.0455% (2300/2947) (classification)
+SVM using time:  8864.25094485
+svm_accuracy= (78.04546996946047, 0.44553783508652867, 0.8938116951487115)
+Start KNN
+Knn accuracy= 0.509670851714
+using time:  755.856581926
+Jaccard accuracy= 0.440787241262
+dice accuracy= 0.440787241262
+hamming accuracy= 0.509670851714
+
+fp:  0.57 d=5 p=0.1 0.2 0.3 0.4  run  f=30
+-----------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_57_p
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 477
+how many 1 raw data: 9610
+how many 1 after noise: 9159
+Start SVM
+Accuracy = 89.8202% (2647/2947) (classification)
+SVM using time:  3342.5226779
+svm_accuracy= (89.82015609093993, 0.170003393281303, 0.947139845834534)
+Start KNN
+Knn accuracy= 0.753987105531
+using time:  823.122488022
+Jaccard accuracy= 0.751951136749
+dice accuracy= 0.751951136749
+hamming accuracy= 0.753987105531
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 1070
+how many 1 raw data: 9610
+how many 1 after noise: 8620
+Start SVM
+Accuracy = 87.8521% (2589/2947) (classification)
+SVM using time:  4459.95432496
+svm_accuracy= (87.85205293518833, 0.20800814387512725, 0.936748341260986)
+Start KNN
+Knn accuracy= 0.680013573125
+using time:  734.971500874
+Jaccard accuracy= 0.676959619952
+dice accuracy= 0.676959619952
+hamming accuracy= 0.680013573125
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1498
+how many 1 raw data: 9610
+how many 1 after noise: 8216
+Start SVM
+Accuracy = 86.2233% (2540/2947) (classification)
+SVM using time:  5918.06660795
+svm_accuracy= (86.22327790973871, 0.2507634882931795, 0.9263918729135268)
+Start KNN
+Knn accuracy= 0.607736681371
+using time:  699.045831919
+Jaccard accuracy= 0.58398371225
+dice accuracy= 0.58398371225
+hamming accuracy= 0.607736681371
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 1912
+how many 1 raw data: 9610
+how many 1 after noise: 7868
+Start SVM
+Accuracy = 82.4228% (2429/2947) (classification)
+SVM using time:  7903.42086911
+svm_accuracy= (82.42280285035629, 0.30505598914149984, 0.9143244679467475)
+Start KNN
+Knn accuracy= 0.634543603665
+using time:  810.791438103
+Jaccard accuracy= 0.610111978283
+dice accuracy= 0.610111978283
+hamming accuracy= 0.634543603665
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2505
+how many 1 raw data: 9610
+how many 1 after noise: 7305
+Start SVM
+Accuracy = 81.4048% (2398/2947) (classification)
+SVM using time:  8512.35646105
+svm_accuracy= (81.40481845945028, 0.34373939599592807, 0.9040830760990795)
+Start KNN
+Knn accuracy= 0.351883271123
+using time:  760.841615915
+Jaccard accuracy= 0.315575161181
+dice accuracy= 0.315575161181
+hamming accuracy= 0.351883271123
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 2976
+how many 1 raw data: 9610
+how many 1 after noise: 6846
+Start SVM
+Accuracy = 72.2769% (2129/2947) (classification)
+SVM using time:  9201.9415369
+svm_accuracy= (72.27689175432643, 0.4835425856803529, 0.8845161248604776)
+Start KNN
+Knn accuracy= 0.440787241262
+using time:  863.123492956
+Jaccard accuracy= 0.39362063115
+dice accuracy= 0.39362063115
+hamming accuracy= 0.440787241262
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3398
+how many 1 raw data: 9610
+how many 1 after noise: 6474
+ HAR Start SVM
+Accuracy = 81.4048% (2398/2947) (classification)
+SVM using time:  9507.4215548
+svm_accuracy= (81.40481845945028, 0.31319986426874785, 0.9061968016256389)
+Start KNN
+Knn accuracy= 0.38174414659
+using time:  779.837065935
+Jaccard accuracy= 0.357312521208
+dice accuracy= 0.357312521208
+hamming accuracy= 0.38174414659
+
+lenth: 10000 b: 10 num_hash: 30 dis: 5.0 false_positive:  0.574322953125
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 4019
+how many 1 raw data: 9610
+how many 1 after noise: 5901
+Start SVM
+Accuracy = 74.9237% (2208/2947) (classification)
+SVM using time:  9230.81803107
+svm_accuracy= (74.92365117068205, 0.4075330844927044, 0.8876778272970743)
+Start KNN
+Knn accuracy= 0.20257889379
+using time:  837.470177174
+Jaccard accuracy= 0.197488971836
+dice accuracy= 0.197488971836
+hamming accuracy= 0.20257889379
+
+fp= 0.76 d= 5 p=0.1 0.2 0.3 0.4 run    f=40
+------------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_76_p
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 485
+how many 1 raw data: 9875
+how many 1 after noise: 9404
+Start SVM
+Accuracy = 87.7503% (2586/2947) (classification)
+SVM using time:  3965.40994096
+svm_accuracy= (87.75025449609772, 0.20291822192059722, 0.9366160834227184)
+Start KNN
+Knn accuracy= 0.612826603325
+using time:  661.044233084
+Jaccard accuracy= 0.609093993892
+dice accuracy= 0.609093993892
+hamming accuracy= 0.612826603325
+
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 973
+how many 1 raw data: 9875
+how many 1 after noise: 8920
+Start SVM
+Accuracy = 86.359% (2545/2947) (classification)
+SVM using time:  6360.04686904
+svm_accuracy= (86.35900916185952, 0.22904648795385138, 0.9282682286225575)
+Start KNN
+Knn accuracy= 0.443501866305
+using time:  810.915383101
+Jaccard accuracy= 0.424499491008
+dice accuracy= 0.424499491008
+hamming accuracy= 0.443501866305
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1552
+how many 1 raw data: 9875
+how many 1 after noise: 8363
+Start SVM
+Accuracy = 84.4588% (2489/2947) (classification)
+SVM using time:  7221.39765692
+svm_accuracy= (84.45877163216831, 0.2653545978961656, 0.9192233334605359)
+Start KNN
+Knn accuracy= 0.375636240244
+using time:  723.195940018
+Jaccard accuracy= 0.365795724466
+dice accuracy= 0.365795724466
+hamming accuracy= 0.375636240244
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 1996
+how many 1 raw data: 9875
+how many 1 after noise: 7919
+Start SVM
+Accuracy = 82.0495% (2418/2947) (classification)
+SVM using time:  8495.07855606
+svm_accuracy= (82.04954190702409, 0.34136409908381404, 0.9049378427832309)
+Start KNN
+Knn accuracy= 0.277570410587
+using time:  854.666001797
+Jaccard accuracy= 0.235154394299
+dice accuracy= 0.235154394299
+hamming accuracy= 0.277570410587
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2440
+how many 1 raw data: 9875
+how many 1 after noise: 7487
+Start SVM
+Accuracy = 83.848% (2471/2947) (classification)
+SVM using time:  8960.98250508
+svm_accuracy= (83.8479809976247, 0.28876823888700376, 0.9089565917028325)
+Start KNN
+Knn accuracy= 0.381065490329
+using time:  829.181017876
+Jaccard accuracy= 0.358330505599
+dice accuracy= 0.358330505599
+hamming accuracy= 0.381065490329
+
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 2918
+how many 1 raw data: 9875
+how many 1 after noise: 7045
+Start SVM
+Accuracy = 75.738% (2232/2947) (classification)
+SVM using time:  9512.39262414
+svm_accuracy= (75.73803868340686, 0.48795385137427894, 0.8770392818415478)
+Start KNN
+Knn accuracy= 0.345096708517
+using time:  864.113277912
+Jaccard accuracy= 0.329487614523
+dice accuracy= 0.329487614523
+hamming accuracy= 0.345096708517
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3552
+how many 1 raw data: 9875
+how many 1 after noise: 6407
+ HAR Start SVM
+Accuracy = 61.5202% (1813/2947) (classification)
+SVM using time:  9823.15313196
+svm_accuracy= (61.52019002375297, 1.0478452663725824, 0.7874632794205314)
+Start KNN
+Knn accuracy= 0.180522565321
+using time:  790.012130976
+Jaccard accuracy= 0.180522565321
+dice accuracy= 0.180522565321
+hamming accuracy= 0.180522565321
+
+
+lenth: 10000 b: 10 num_hash: 40 dis: 5.0 false_positive:  0.763051328521
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 3955
+how many 1 raw data: 9875
+how many 1 after noise: 6014
+Start SVM
+Accuracy = 71.3946% (2104/2947) (classification)
+SVM using time:  9390.41567779
+svm_accuracy= (71.39463861554123, 0.5958601968103155, 0.8507499766499254)
+Start KNN
+Knn accuracy= 0.23583305056
+using time:  731.164942026
+Jaccard accuracy= 0.239226331863
+dice accuracy= 0.239226331863
+hamming accuracy= 0.23583305056
+
+fp= 0.88 d= 5 p=0.1 0.2 0.3 0.4 run  f=50
+------------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_88_p
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 491
+how many 1 raw data: 9948
+how many 1 after noise: 9461
+Start SVM
+Accuracy = 83.1015% (2448/2947) (classification)
+SVM using time:  5435.66603589
+svm_accuracy= (83.10145911096029, 0.3023413640990838, 0.9068172583298894)
+Start KNN
+Knn accuracy= 0.346114692908
+using time:  840.61122489
+Jaccard accuracy= 0.334916864608
+dice accuracy= 0.334916864608
+hamming accuracy= 0.346114692908
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 993
+how many 1 raw data: 9948
+how many 1 after noise: 8959
+Accuracy = 79.6064% (2346/2947) (classification)
+SVM using time:  7256.80265903
+svm_accuracy= (79.60637936884967, 0.36952833389888023, 0.8809286372133694)
+Start KNN
+Knn accuracy= 0.25890736342
+using time:  892.493412971
+Jaccard accuracy= 0.257550050899
+dice accuracy= 0.257550050899
+hamming accuracy= 0.25890736342
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1488
+how many 1 raw data: 9948
+how many 1 after noise: 8474
+Start SVM
+Accuracy = 79.2331% (2335/2947) (classification)
+SVM using time:  7920.21192384
+svm_accuracy= (79.23311842551747, 0.3854767560230743, 0.8765145860662515)
+Start KNN
+Knn accuracy= 0.289446895148
+using time:  725.0960989
+Jaccard accuracy= 0.289107567017
+dice accuracy= 0.289107567017
+hamming accuracy= 0.289446895148
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 2006
+how many 1 raw data: 9948
+how many 1 after noise: 7968
+Start SVM
+Accuracy = 67.2888% (1983/2947) (classification)
+SVM using time:  8522.66166091
+svm_accuracy= (67.288768238887, 1.2066508313539193, 0.7246358635425041)
+Start KNN
+Knn accuracy= 0.143875127248
+using time:  688.585144997
+Jaccard accuracy= 0.142857142857
+dice accuracy= 0.142857142857
+hamming accuracy= 0.143875127248
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2419
+how many 1 raw data: 9948
+how many 1 after noise: 7565
+Start SVM
+Accuracy = 73.7021% (2172/2947) (classification)
+SVM using time:  9062.52520108
+svm_accuracy= (73.70206990159484, 0.9691211401425178, 0.729082064883398)
+Start KNN
+Knn accuracy= 0.274855785545
+using time:  773.738470793
+Jaccard accuracy= 0.267729894808
+dice accuracy= 0.267729894808
+hamming accuracy= 0.274855785545
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 2931
+how many 1 raw data: 9948
+how many 1 after noise: 7059
+Start SVM
+Accuracy = 34.7811% (1024/2947) (classification)
+SVM using time:  9642.91917896
+svm_accuracy= (34.781133355955205, 2.0464879538513743, 0.3319652246266067)
+Start KNN
+Knn accuracy= 0.169324737021
+using time:  831.114224911
+Jaccard accuracy= 0.167288768239
+dice accuracy= 0.167288768239
+hamming accuracy= 0.169324737021
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3413
+how many 1 raw data: 9948
+how many 1 after noise: 6575
+ HAR Start SVM
+Accuracy = 35.7313% (1053/2947) (classification)
+SVM using time:  9539.96566916
+svm_accuracy= (35.73125212080082, 2.1367492365117067, 0.3474399496664955)
+Start KNN
+Knn accuracy= 0.197828299966
+using time:  716.443406105
+Jaccard accuracy= 0.209365456396
+dice accuracy= 0.209365456396
+hamming accuracy= 0.197828299966
+
+lenth: 10000 b: 10 num_hash: 50 dis: 5.0 false_positive:  0.883299043195
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 4090
+how many 1 raw data: 9948
+how many 1 after noise: 5900
+Start SVM
+Accuracy = 33.6274% (990/2947) (classification)
+SVM using time:  9224.32347202
+svm_accuracy= (33.6274177129284, 2.0702409229725145, 0.4034121721728655)
+Start KNN
+Knn accuracy= 0.181879877842
+using time:  841.819874048
+Jaccard accuracy= 0.182219205972
+dice accuracy= 0.182219205972
+hamming accuracy= 0.181879877842
+
+fp= 0.94 d= 5 p=0.1 0.2 0.3 0.4 run  f=60
+------------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_94_p
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 446
+how many 1 raw data: 9980
+how many 1 after noise: 9540
+Start SVM
+Accuracy = 64.5402% (1902/2947) (classification)
+SVM using time:  5738.49123693
+svm_accuracy= (64.5402103834408, 1.179504580929759, 0.6444677281159401)
+Start KNN
+Knn accuracy= 0.263657957245
+using time:  748.080703974
+Jaccard accuracy= 0.263657957245
+dice accuracy= 0.263657957245
+hamming accuracy= 0.263657957245
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 998
+how many 1 raw data: 9980
+how many 1 after noise: 8986
+Start SVM
+Accuracy = 55.5141% (1636/2947) (classification)
+SVM using time:  6951.25223207
+svm_accuracy= (55.51408211740753, 1.4387512724804887, 0.5853602124735108)
+Start KNN
+Knn accuracy= 0.153376314897
+using time:  651.935265064
+Jaccard accuracy= 0.148286392942
+dice accuracy= 0.148286392942
+hamming accuracy= 0.153376314897
+
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1517
+how many 1 raw data: 9980
+how many 1 after noise: 8473
+Start SVM
+Accuracy = 49.7455% (1466/2947) (classification)
+SVM using time:  7976.43263412
+svm_accuracy= (49.7455039022735, 2.956226671191042, 0.44874367685095917)
+Start KNN
+Knn accuracy= 0.159823549372
+using time:  721.389922857
+Jaccard accuracy= 0.159823549372
+dice accuracy= 0.159823549372
+hamming accuracy= 0.159823549372
+
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 1939
+how many 1 raw data: 9980
+how many 1 after noise: 8053
+Start SVM
+Accuracy = 35.7313% (1053/2947) (classification)
+SVM using time:  8701.11594892
+svm_accuracy= (35.73125212080082, 2.0464879538513743, 0.44038506844401387)
+Start KNN
+Knn accuracy= 0.180522565321
+using time:  860.139670134
+Jaccard accuracy= 0.180522565321
+dice accuracy= 0.180522565321
+hamming accuracy= 0.180522565321
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2496
+how many 1 raw data: 9980
+how many 1 after noise: 7488
+Start SVM
+Accuracy = 31.9986% (943/2947) (classification)
+SVM using time:  9435.67057896
+svm_accuracy= (31.998642687478792, 2.1011197828299966, 0.4802950922733831)
+Start KNN
+Knn accuracy= 0.245673566339
+using time:  865.124218941
+Jaccard accuracy= 0.221241940957
+dice accuracy= 0.221241940957
+hamming accuracy= 0.245673566339
+
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 3027
+how many 1 raw data: 9980
+how many 1 after noise: 6961
+Start SVM
+Accuracy = 57.7197% (1701/2947) (classification)
+SVM using time:  9742.6629858
+svm_accuracy= (57.719714964370546, 1.5564981336952834, 0.5447488430656884)
+Start KNN
+Knn accuracy= 0.180522565321
+using time:  819.279495955
+Jaccard accuracy= 0.180522565321
+dice accuracy= 0.180522565321
+hamming accuracy= 0.180522565321
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3519
+how many 1 raw data: 9980
+how many 1 after noise: 6471
+ HAR Start SVM
+Accuracy = 31.829% (938/2947) (classification)
+SVM using time:  9451.65349698
+svm_accuracy= (31.828978622327792, 2.2388870037326094, 0.3239616695868794)
+Start KNN
+Knn accuracy= 0.0787241262301
+using time:  828.766670942
+Jaccard accuracy= 0.0739735324058
+dice accuracy= 0.0739735324058
+hamming accuracy= 0.0787241262301
+
+lenth: 10000 b: 10 num_hash: 60 dis: 5.0 false_positive:  0.946733274133
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 3972
+how many 1 raw data: 9980
+how many 1 after noise: 6020
+Start SVM
+Accuracy = 18.0523% (532/2947) (classification)
+SVM using time:  9440.39950585
+svm_accuracy= (18.052256532066508, 5.050220563284697, nan)
+Start KNN
+Knn accuracy= 0.184594502884
+using time:  726.688720942
+Jaccard accuracy= 0.183576518493
+dice accuracy= 0.183576518493
+hamming accuracy= 0.184594502884
+
+
+fp= 0.97 d= 10 p=0.1 0.2 0.3 0.4 run  f=70
+------------------------------------------
+nohup python HAR_ML_withDP.py >HAR_fp0_97_p
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.05
+data:  (7352, 10000)
+-2.99573227355
+how many 1 in noise: 506
+how many 1 raw data: 9995
+how many 1 after noise: 9493
+Start SVM
+Accuracy = 47.7774% (1408/2947) (classification)
+SVM using time:  6559.90329409
+svm_accuracy= (47.777400746521884, 2.2293858160841533, 0.4216764559097755)
+Start KNN
+Knn accuracy= 0.180522565321
+using time:  743.296117783
+Jaccard accuracy= 0.180522565321
+dice accuracy= 0.180522565321
+hamming accuracy= 0.180522565321
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.1
+data:  (7352, 10000)
+-2.30258509299
+how many 1 in noise: 1022
+how many 1 raw data: 9995
+how many 1 after noise: 8973
+Start SVM
+Accuracy = 43.5019% (1282/2947) (classification)
+SVM using time:  6594.60356188
+svm_accuracy= (43.501866304716664, 2.808958262639973, 0.418283910503612)
+Start KNN
+Knn accuracy= 0.163556158806
+using time:  652.985440969
+Jaccard accuracy= 0.163556158806
+dice accuracy= 0.163556158806
+hamming accuracy= 0.163556158806
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.15
+data:  (7352, 10000)
+-1.89711998489
+how many 1 in noise: 1492
+how many 1 raw data: 9995
+how many 1 after noise: 8505
+Start SVM
+Accuracy = 34.2043% (1008/2947) (classification)
+SVM using time:  8092.91199899
+svm_accuracy= (34.204275534441805, 2.276552426196132, 0.3773566916619347)
+Start KNN
+Knn accuracy= 0.181540549712
+using time:  751.26256609
+Jaccard accuracy= 0.181540549712
+dice accuracy= 0.181540549712
+hamming accuracy= 0.181540549712
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.2
+data:  (7352, 10000)
+-1.60943791243
+how many 1 in noise: 2025
+how many 1 raw data: 9995
+how many 1 after noise: 7970
+Start SVM
+Accuracy = 32.5416% (959/2947) (classification)
+SVM using time:  8729.55321407
+svm_accuracy= (32.541567695961994, 2.1201221581269087, 0.3525213024761584)
+Start KNN
+Knn accuracy= 0.182219205972
+using time:  654.409825087
+Jaccard accuracy= 0.182219205972
+dice accuracy= 0.182219205972
+hamming accuracy= 0.182219205972
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.25
+data:  (7352, 10000)
+-1.38629436112
+how many 1 in noise: 2500
+how many 1 raw data: 9995
+how many 1 after noise: 7495
+Start SVM
+Accuracy = 25.0763% (739/2947) (classification)
+SVM using time:  9429.8617909
+svm_accuracy= (25.07634882931795, 2.8618934509670853, 0.08799761789587696)
+Start KNN
+Knn accuracy= 0.16830675263
+using time:  837.916438103
+Jaccard accuracy= 0.16830675263
+dice accuracy= 0.16830675263
+hamming accuracy= 0.16830675263
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.3
+data:  (7352, 10000)
+-1.20397280433
+how many 1 in noise: 3012
+how many 1 raw data: 9995
+how many 1 after noise: 6983
+Start SVM
+Accuracy = 18.1541% (535/2947) (classification)
+SVM using time:  9694.76547098
+svm_accuracy= (18.15405497115711, 5.0176450627757045, 0.0035544638225272697)
+Start KNN
+Knn accuracy= 0.166610111978
+using time:  769.694845915
+Jaccard accuracy= 0.166610111978
+dice accuracy= 0.166610111978
+hamming accuracy= 0.166610111978
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.35
+data:  (7352, 10000)
+-1.0498221245
+how many 1 in noise: 3457
+how many 1 raw data: 9995
+how many 1 after noise: 6542
+ HAR Start SVM
+Accuracy = 22.5653% (665/2947) (classification)
+SVM using time:  9783.06478214
+svm_accuracy= (22.565320665083135, 2.7309127926705123, 0.12408678031762316)
+Start KNN
+Knn accuracy= 0.169324737021
+using time:  788.172452211
+Jaccard accuracy= 0.178825924669
+dice accuracy= 0.178825924669
+hamming accuracy= 0.169324737021
+
+
+lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
+BF start
+BF filter done
+<type 'numpy.ndarray'>
+epsilon:  1
+scale:  1.0
+epsilon : 1 , p-value,  0.4
+data:  (7352, 10000)
+-0.916290731874
+how many 1 in noise: 4010
+how many 1 raw data: 9995
+how many 1 after noise: 5987
+Start SVM
+Accuracy = 18.2219% (537/2947) (classification)
+SVM using time:  9457.19920492
+svm_accuracy= (18.22192059721751, 8.894468951476078, nan)
+Start KNN
+Knn accuracy= 0.16830675263
+using time:  748.16395092
+Jaccard accuracy= 0.16830675263
+dice accuracy= 0.16830675263
+hamming accuracy= 0.16830675263

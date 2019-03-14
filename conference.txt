@@ -1,0 +1,117 @@
+
+
+PETS August 31, 2018 (firm)
+November 30, 2018 (firm)
+
+FSE Submission: 1 September 2018 https://fse.iacr.org/2019/callforpapers.html
+
+EWSN beijin
+Paper registration: September 7, 2018 
+Paper submission: September 14, 2018 
+
+NSDI September 13,
+
+IPSN 10 Oct
+
+
+DSN Nov 30, 2018
+
+Mobisys December 1st,
+
+Sensys April 1, 
+
+
+May 11 2018 Asiacrypt
+
+June 15 ACSAC
+
+
+------------------------------
+1.rappor cannot time-serires, bloom filter not count numercial meaning and order.
+
+2.utilize the bloom filter privacy can have a better trade-off. 
+
+similar to/addition to laplace noise,
+
+(2.sematic meaning of time series data.
+
+3. ml need the sematic meaning.)
+
+3. sample size
+
+
+simply laplace noise cannot get a good trade-off, need encrypt.
+
+
+Rappor rely on bloom filter, bloom filter dosent have a solution to numerical sematic meaning and preserving (time) order. so novel adtipive method to sematic value on bloom filter order- based, fuzzy logic model.
+
+Rappor randon need lots sample size, application scenario different, ditribute.
+Different scenario, add laplace noise, but dont know how, it is continued, we propose a method.
+
+Evalute results.
+
+
+
+discussion:
+bloom filter is encryption, why not encryption. encrpytion preseve distance
+
+secure multi-party computation.
+
+
+
+1.%DV: why parameters should be known? length will be anyway known,but not the hash functions! If the end users know the hash functions, they could perform an attack, for example similar to dictionary attack!
+
+All the parameters are published to user included length, b, distance, hash function but no p-value.
+This is because we want user to get most of the data utility. User use the same (parameter) setting to encode their own dataset, then they can classify their own data based on previous published one.
+But even the parameters are revealed to users/attackers, we guarantee the published dataset can agaisnt to threat 1,2,3.
+
+Threat 3 is similar to dictionary attack or even stronger attack. In the privacy analysis, the privacy is discussed with attack results.
+
+2. Are you encoding all the records in a dataset into one BF or one record into one BF? It is not clear in the paper.
+
+One data record (l dimension) is hashed-map to one bloom filter (with length n). And one Bloom filter with its label can be used as one training data record.
+(added in red color)
+
+3. For differential privacy in BFs, what do you consider as neighbouring datasets?Two single Bloom filters or two sets of Bloom filters where each set represents one of the two neighbouring original datasets? 
+
+The neigoubouring datasets in our setting refer to two dataset with large overlap information, such as IMDb and Netflix. These two must have overlapped user preference. If one of database revealed, high possiblilty to find the identiy match in the other databased even anonymized.
+In our privacy analysis setting, we generalize the situation to extreme, we assume the two dataset are exactly same. We want to illustrate, even that attacker still cannot (low possibility) find the `correlationship' among data within them.
+
+With differential privacy mechanism, I think both two single bloom filter or two sets of bloom filters are differential private, which comes from the differential privacy composability feature. Assume one our propsoed Bloom filter with size m is separted to two half with size m/2. These two are also differential private to each other. 
+
+4. I just had a read through the differential privacy theorem. Using p-value similar to RAPPOR makes sense. But why \epsilon is 1 on page 7? Changing one of the entries in the database causes two Bloom filters to change, right? Again not clear what is the response function in this context.
+
+There is no specific response function (like average, maximum, etc.) in our context. (Response function in PPML is not fully discussed and not this paper's focus either.) So we general the situation to its limit that comes to the global sensity is 1 bit for two Bloom filter dataset. This only comes as an example illustrate idea how our proposed method will use laplace noise. 
+
+If we can add \mathcal{L}(0,1) noise directly onto Bloom filters, we can achieve differential privacy with the \eps = 1 (sensity =1). However, our proposed method also `process' the noise in order to fit the Bloom filter space. And our process include p-value serve as \eps.
+
+
+Also, please describe how conditional probability is derived in Equation 7.
+
+Equaiton 7 get updated.
+
+
+
+https://stackoverflow.com/questions/40406954/computing-the-md5-hash-of-an-integer-in-python-3?rq=1
+
+A cryptographic hash such as MD5 can only be applied to bytes. There are more efficient ways of encoding a number as bytes, but you still need to follow the contract.
+
+>>> hashlib.md5(123 .to_bytes(4, 'big')).hexdigest()
+'a7e0b18d0d4516eb0ea63371704a500c'
+
+优点
+相比于其它的数据结构，布隆过滤器在空间和时间方面都有巨大的优势。布隆过滤器存储空间和插入/查询时间都是常数。另外, Hash 函数相互之间没有关系，方便由硬件并行实现。布隆过滤器不需要存储元素本身，在某些对保密要求非常严格的场合有优势。
+
+布隆过滤器可以表示全集，其它任何数据结构都不能；
+
+k 和 m 相同，使用同一组 Hash 函数的两个布隆过滤器的交并差运算可以使用位操作进行。
+
+"123"
+202cb962ac59075b964b07152d234b70
+
+int32(123)
+f18b8dbefe02a0efce281deb55a209cd
+int64(123)
+f18b8dbefe02a0efce281deb55a209cd
+int8(123)
+f95b70fdc3088560732a5ac135644506

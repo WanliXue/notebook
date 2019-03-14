@@ -28,7 +28,7 @@ num_hash,b
 f= (1 -e^(-num_hash * [(2*b+2)*com_to_len] /length))^num_hash
 
 ！！！！！！
-fp=0.01
+fp=0.1
 
 length = 10000
 b = 10
@@ -94,7 +94,7 @@ accuracy is:  0.727519511367
 
 ！！！！！！
 
-fp=0.02
+fp=0.23
 
 BF start
 BF filter done
@@ -154,7 +154,7 @@ accuracy is:  0.723447573804
 
 
 ！！！！！！
-fp:  0.09
+fp:  0.36
 
 Compress
 Compress done
@@ -322,7 +322,7 @@ accuracy is:  0.346454021038
 *****************
 
 --------！！！！！
-fp:  0.32
+fp:  0.57
 
 Compress
 Compress done
@@ -381,7 +381,7 @@ lenth: 10000 b: 10 num_hash: 30 dis: 20.0 false_positive:  0.574322953125
 accuracy is:  0.667119104174
 
 ------------
-fp= 0.61
+fp= 0.76
 
 Accuracy = 87.3431% (2574/2947) (classification)
 SVM using time:  870.454576015
@@ -460,7 +460,7 @@ accuracy is:  0.64099083814
 
 
 --------------
-fp=0.8148
+fp=0.88
 
 Start SVM
 Accuracy = 83.7462% (2468/2947) (classification)
@@ -540,7 +540,7 @@ accuracy is:  0.619613165931
 
 
 ------------
-fp=0.92
+fp=0.94
 
 Compress
 Compress done
@@ -603,7 +603,7 @@ hamming accuracy= 0.546318289786
 
 
 --------------------
-fp=0.96
+fp=0.97
 
 Compress done
 lenth: 10000 b: 10 num_hash: 70 dis: 5.0 false_positive:  0.976787333546
@@ -666,10 +666,6 @@ hamming accuracy= 0.484899898202
 -----------------
 fp=0.98
 
-
-
-！！！！！---------
-false_positive:  0.94
 
 Compress
 Compress done
